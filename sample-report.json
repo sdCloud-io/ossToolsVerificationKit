@@ -1,0 +1,17 @@
+{
+    "executions": [{
+        "engineName": "SDEverywhere",
+        "modelsCount": 40,
+        "modelsSucceeded": 35,
+        "modelsFailed": 5,
+        "results": [{
+            "path": "/a/v/d/s/ddd.mdl",
+            "codeGenerationTime": 1200,
+            "codeCompilationTime": 1100,
+            "codeExecutionTime": 600,
+            "totalTime": 2900,
+            "status": "success|failedToGenerate|FailedToCompile|FailedToRun",
+            "log": "the log we will capture"
+        }]
+    }]
+}

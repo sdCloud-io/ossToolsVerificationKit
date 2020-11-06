@@ -1,0 +1,268 @@
+#collaborations {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+    min-width: 400px;
+}
+
+#collaborations-title {
+    text-align: center;
+    font-family: 'Open sans', serif;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#collaborations-container {
+    padding-top: 10px;
+    font-family: 'Open sans', serif;
+    display: table-row;
+}
+
+#collaborations-container-item {
+    display: table-cell;
+    width: 225px;
+    height: 259px;
+    margin-left: 10px;
+    font-family: 'Open Sans', serif;
+    font-size: 16;
+}
+
+.cln-bg-collaboration {
+    background-image: url('../images/cloud_collaboration.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+
+#collaborations-university {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#collaborations-university-logo {
+    float: left;
+    background-image: url('../images/itmo-logo-small.png');
+    background-size: contain;
+    width: 100px;
+    height: 70px;
+}
+
+#collaborations-university-logo-2 {
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../images/itmo-logo-small.png');
+    background-size: contain;
+    width: 100px;
+    height: 90px;
+}
+
+#collaborations-university-name {
+    float: left;
+    width: 300px;
+    text-align: left;
+    font-family: 'Open Sans', serif;
+    font-size: 19;
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+#collaborations-saucelabs-badge {
+    background-image: url('../images/Powered_by_Sauce_Labs_badges_red.svg');
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collaborations-veesp-logo {
+    float: left;
+    background-image: url('../images/veesp-logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 90px;
+}
+.collaborations-veesp-logo-2 {
+    margin: auto;
+    background-image: url('../images/veesp-logo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 90px;
+}
+
+.collaborations-veesp-label {
+    float: left;
+    width: 300px;
+    text-align: left;
+    font-family: 'Open Sans', serif;
+    font-size: 15px;
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+.collaborations-global-sign-badge {
+    width: 125px;
+    height: 50px;
+    margin-top: 15px;
+    float: left;
+}
+
+.collaborations-global-sign-label {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: 'Open Sans', serif;
+    font-size: 15px;
+    float: left;
+}
+
+.collaborations-container-item-content {
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-left:45px;
+    background-size: contain;
+    width: 225px;
+    height: 259px;
+}
+
+#supported-by-title {
+    text-align: center;
+    font-family: 'Open sans', serif;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    #collaborations-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+        width: 90%;
+    }
+    
+    .collaborations-container-item-content {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-position: center center;
+        padding: 10px;
+    }
+    
+    #collaborations-container-item {
+        display: block;
+        width: 80%;
+        position: relative;
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+    #collaborations-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+    }
+    
+    #collaborations-container-item {
+        display: block;
+        width: 80%;
+        position: relative;
+        padding-top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .collaborations-container-item-content {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        font-size: 25px;
+        background-position: center center;
+        padding: 10px;
+        font-size: 40px;
+        width: auto;
+        height: auto;
+    }
+    
+    #collaborations-university {
+        width: 90%;
+    }
+    
+    #collaborations-university-name {
+        display: none;
+    }
+
+    
+    #collaborations-university-logo {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 550px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .collaborations-veesp-logo {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 550px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    .collaborations-veesp-label {
+        display: none;
+    }
+    
+    .collaborations-global-sign-label {
+        display: none;
+    }
+
+    .collaborations-global-sign-badge {
+        float: none;
+        transform: scale(2.0);
+        margin-top: 35px;
+        padding-top: 15px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #collaborations-saucelabs-badge {
+        width: 400px;
+        height: 145px;
+        background-position: center center;
+    }
+    
+    #supported-by-title {
+        display: block;
+    }
+}

@@ -1,0 +1,381 @@
+<html>
+
+<head>
+    <title>
+        sdCloud :: OpenSource Tools Execution Report
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106134212-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106134212-1');
+    </script>
+
+    <meta name="viewport" content="user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link type="text/css" rel='stylesheet' href='resources/styles/cloud-root.css' media='all' />
+    <link type="text/css" rel='stylesheet' href='resources/styles/cloud-header.css' media='all' />
+    <link type="text/css" rel='stylesheet' href='resources/styles/cloud-banner.css' media='all' />
+    <link type="text/css" rel='stylesheet' href='resources/styles/cloud-footer.css' media='all' />
+    <link type="text/css" rel='stylesheet' href='resources/styles/cloud-certification.css' media='all' />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script type="text/javascript" src="resources/scripts/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.0/mustache.js"></script>
+
+    <script src="reportGeneratorController.js"></script>
+    <!-- Font Awesome Styles-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Scripts -->
+    <script type='text/javascript' src='resources/scripts/jquery.js?1500409708444'></script>
+    <script type='text/javascript' src='resources/scripts/jquery-migrate.min.js?1500409708444'></script>
+</head>
+    
+<body>
+    <header>
+        <div id="header-content">                
+            <div id="header-content-title">
+                sdCloud
+            </div>
+            <div id="sampleArea"></div>
+            <div id="header-content-subtitle">
+                Models Certification Tool
+            </div>                
+        </div>          
+    </header>
+<div class="container">
+<ul class="nav nav-tabs">
+    <li class="nav-item" onclick="openTab(event, 'vensimResults')">
+        <a class="nav-link active tab-text" href="#">Vensim executions</a>
+    </li>
+    <li class="nav-item" onclick="openTab(event, 'xmileResults')">
+        <a class="nav-link tab-text" href="#">XMILE executions</a>
+    </li>
+</ul>
+<div id="vensimResults" class="tabcontent">
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-xs-12">
+            <div class="row padding-top-15">
+                <div class="col-md-12 col-lg-12 col-xs-12">
+
+                    <div class="col-md-4 col-lg-4 col-xs-4">
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-4">
+                        <span class="item-header-black">SDEverywhere</span>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xs-4">
+                        <span class="item-header-black">PySD</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="padding-top-15" id="runTarget">
+            </div>
+            <script id="runResult" type="x-tmpl-mustache">
+                        {{#sdeResults}}
+                        <div class="panel-group">
+                            <div class="panel panel-default">
+                                <div data-toggle="collapse" href="#collapse{{index}}" class="panel-heading cursor-pointer">
+                                    <div class="row">
+                                        <div class="col-md-4 col-lg-4 col-xs-4">
+                                            <div class="panel-title no-overflow ">
+                                                <a class="item-header">
+                                                    {{modelName}}
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-lg-4 col-xs-4">
+                                            <span class="icon {{sdeElmnt.result}}"></span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-xs-2">
+                                            <span class="icon {{pysdElemnt.result}}"></span>
+                                        </div>
+                                        <div class="col-md-2 col-lg-2 col-xs-2">
+                                            <span class="icon {{isStateEqual}}"></span>
+                                            <span class="{{isStateEqual}}-star"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapse{{index}}" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-12 col-lg-12 col-xs-12">
+                                                <div class="row">
+                                                    <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">Full Name</span>
+                                                            </div>
+                                                            <div class="col-md-8 col-lg-8 col-xs-8">
+                                                                <span class="normal-text no-overflow">{{ modelName }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">SDEverywhere</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">PySD</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">Result</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="normal-text">{{ sdeElmnt.result }}</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="normal-text">{{pysdElemnt.result}}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">Code Execution Time</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="normal-text">{{ sdeElmnt.codeExecutionTime }}</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="normal-text">{{pysdElemnt.codeExecutionTime}}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">Code Generation Time</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="normal-text">{{ sdeElmnt.codeGenerationTime }}</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="normal-text">{{pysdElemnt.codeGenerationTime}}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">Code Compilation Time</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="normal-text">{{ sdeElmnt.codeCompilationTime }}</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="normal-text">{{pysdElemnt.codeCompilationTime}}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">Log</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <button type="button" class="btn btn-log" data-toggle="collapse" data-target="#logsde{{index}}">Log</button>
+                                                                <div id="logsde{{index}}" class="collapse">
+                                                                    <div class="log-style">
+                                                                        <pre>
+                                                                            
+                                                                        {{ sdeElmnt.log }}
+                                                                    </pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <button type="button" class="btn btn-log" data-toggle="collapse" data-target="#logpysd{{index}}">Log</button>
+                                                                <div id="logpysd{{index}}" class="collapse">
+                                                                    <div class="log-style">
+                                                                        <pre>
+                                                                        {{ pysdElemnt.log }}
+                                                                    </pre>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <span class="item-header">Last model state</span>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <button type="button" class="btn btn-log" onclick="appendtoTable({{sdeState}},'sdeTable',{{index}})" data-toggle="collapse" data-target="#lastStateSde{{index}}">Show last state</button>
+                                                                <div id="lastStateSde{{index}}" class="collapse">
+                                                                    <div class="log-style">
+                                                                        <table id="sdeTable{{index}}">
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 col-lg-4 col-xs-4">
+                                                                <button type="button" class="btn btn-log" onclick="appendtoTable({{pysdState}},'pysdTable',{{index}})" data-toggle="collapse" data-target="#lastStatePysd{{index}}">Show last state</button>
+                                                                <div id="lastStatePysd{{index}}" class="collapse">
+                                                                    <div class="log-style">
+                                                                        <table id="pysdTable{{index}}"></table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{/sdeResults}}
+                    </script>
+        </div>
+    </div>
+</div>
+
+<div id="xmileResults" class="tabcontent">
+    <div class="row">
+        <div class="col-md-12 col-lg-12 col-xs-12">
+            <div class="row padding-top-15">
+                <div class="col-md-4 col-lg-4 col-xs-4">
+
+                </div>
+                <div class="col-md-8 col-lg-8 col-xs-8">
+                    <span class="item-header-black">PySD</span>
+                </div>
+            </div>
+            <div class="padding-top-15" id="runXmileTarget">
+            </div>
+            <script id="runXmileResult" type="x-tmpl-mustache">
+                    {{#xmileResults}}
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div data-toggle="collapse" href="#collapse{{index}}" class="panel-heading cursor-pointer">
+                                <div class="row">
+                                    <div class="col-md-4 col-lg-4 col-xs-4">
+                                        <div class="panel-title no-overflow ">
+                                            <a class="item-header">
+                                                {{modelName}}
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-lg-8 col-xs-8">
+                                        <span class="icon {{pysdElemnt.result}}"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="collapse{{index}}" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12 col-lg-12 col-xs-12">
+                                            <div class="row">
+                                                <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-lg-4 col-xs-4">
+                                                            <span class="item-header">Full Name</span>
+                                                        </div>
+                                                        <div class="col-md-8 col-lg-8 col-xs-8">
+                                                            <span class="normal-text no-overflow">{{ modelName }}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-lg-4 col-xs-4">
+                                                            <span class="item-header">Result</span>
+                                                        </div>
+                                                        <div class="col-md-8 col-lg-8 col-xs-8">
+                                                            <span class="normal-text">{{pysdElemnt.result}}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-lg-4 col-xs-4">
+                                                            <span class="item-header">Code Execution Time</span>
+                                                        </div>
+                                                        <div class="col-md-8 col-lg-8 col-xs-8">
+                                                            <span class="normal-text">{{pysdElemnt.codeExecutionTime}}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-lg-4 col-xs-4">
+                                                            <span class="item-header">Code Generation Time</span>
+                                                        </div>
+
+                                                        <div class="col-md-8 col-lg-8 col-xs-8">
+                                                            <span class="normal-text">{{pysdElemnt.codeGenerationTime}}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-lg-4 col-xs-4">
+                                                            <span class="item-header">Code Compilation Time</span>
+                                                        </div>
+                                                        <div class="col-md-8 col-lg-8 col-xs-8">
+                                                            <span class="normal-text">{{pysdElemnt.codeCompilationTime}}</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-lg-12 col-xs-12 padding-top-10">
+                                                    <div class="row">
+                                                        <div class="col-md-4 col-lg-4 col-xs-4">
+                                                            <span class="item-header">Log</span>
+                                                        </div>
+
+                                                        <div class="col-md-8 col-lg-8 col-xs-8">
+                                                            <button type="button" class="btn btn-log" data-toggle="collapse" data-target="#logpysd{{index}}">Log</button>
+                                                            <div id="logpysd{{index}}" class="collapse">
+                                                                <div class="log-style">
+                                                                    <pre>
+                                                                        {{ pysdElemnt.log }}
+                                                                    </pre>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/xmileResults}}
+                </script>
+        </div>
+    </div>
+</div>
+<div>
+    <span class="normal-text">*Execution results are not equal because on or more model states are different by more than 0,0001</span>
+</div>
+</div>
+	    <footer>
+            <div id="footer-content">
+                <div id="footer-content-holder">
+                    <span>designed by <a href="https://www.behance.net/svalion" target="_blank" style="text-decoration:none; color: gray;">@svalion</a><br />sdCloud project &copy; 2018. All rights reserved</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

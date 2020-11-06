@@ -1,0 +1,1545 @@
+
+{
+    "startTimeStamp": 1543780382759,
+    "startTime": "Sun Dec  2 11:53:02 PST 2018",
+    "sdeResults":     [
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/Lotka_Volterra/Lotka_Volterra.mdl",
+            "log": "",
+            "codeGenerationTime": 1469,
+            "codeCompilationTime": 1574,
+            "codeExecutionTime": 639 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/samples/Population/Subscripted",
+            "log": "\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nError: ENOENT: no such file or directory, open './testModels/samples/Population/Subscripted.mdl'\nat Object.openSync (fs.js:436:3)\nat Object.readFileSync (fs.js:341:35)\nat preprocessModel (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Preprocessor.js:33:16)\nat generate (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde-generate.js:70:15)\nat Object.handler (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde-generate.js:53:3)\nat Object.self.runCommand (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/lib/command.js:233:22)\nat Object.Yargs.self._parseArgs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:990:30)\nat Object.get [as argv] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:927:19)\nat Object.<anonymous> (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde.js:40:3)\nat Module._compile (internal/modules/cjs/loader.js:688:30)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "Population",
+            "log": "\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nError: ENOENT: no such file or directory, open '/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/Population.mdl'\nat Object.openSync (fs.js:436:3)\nat Object.readFileSync (fs.js:341:35)\nat preprocessModel (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Preprocessor.js:33:16)\nat generate (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde-generate.js:70:15)\nat Object.handler (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde-generate.js:53:3)\nat Object.self.runCommand (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/lib/command.js:233:22)\nat Object.Yargs.self._parseArgs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:990:30)\nat Object.get [as argv] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:927:19)\nat Object.<anonymous> (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde.js:40:3)\nat Module._compile (internal/modules/cjs/loader.js:688:30)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "Model.mdl",
+            "log": "\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nError: ENOENT: no such file or directory, open '/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/Model.mdl'\nat Object.openSync (fs.js:436:3)\nat Object.readFileSync (fs.js:341:35)\nat preprocessModel (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Preprocessor.js:33:16)\nat generate (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde-generate.js:70:15)\nat Object.handler (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde-generate.js:53:3)\nat Object.self.runCommand (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/lib/command.js:233:22)\nat Object.Yargs.self._parseArgs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:990:30)\nat Object.get [as argv] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:927:19)\nat Object.<anonymous> (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/sde.js:40:3)\nat Module._compile (internal/modules/cjs/loader.js:688:30)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/Roessler_Chaos/roessler_chaos.mdl",
+            "log": "",
+            "codeGenerationTime": 1431,
+            "codeCompilationTime": 1643,
+            "codeExecutionTime": 661 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/SIR/SIR.mdl",
+            "log": "",
+            "codeGenerationTime": 1438,
+            "codeCompilationTime": 1612,
+            "codeExecutionTime": 650 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/Workforce/workforce.mdl",
+            "log": "",
+            "codeGenerationTime": 1573,
+            "codeCompilationTime": 1598,
+            "codeExecutionTime": 716 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/pendulum/Single_Pendulum.mdl",
+            "log": "",
+            "codeGenerationTime": 1463,
+            "codeCompilationTime": 1697,
+            "codeExecutionTime": 669 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/teacup/teacup.mdl",
+            "log": "",
+            "codeGenerationTime": 1317,
+            "codeCompilationTime": 1588,
+            "codeExecutionTime": 631 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/teacup/teacup_mdl.mdl",
+            "log": "",
+            "codeGenerationTime": 1280,
+            "codeCompilationTime": 976,
+            "codeExecutionTime": 636 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/abs/test_abs.mdl",
+            "log": "",
+            "codeGenerationTime": 1389,
+            "codeCompilationTime": 1617,
+            "codeExecutionTime": 630 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/active_initial/test_active_initial.mdl",
+            "log": "",
+            "codeGenerationTime": 1462,
+            "codeCompilationTime": 1626,
+            "codeExecutionTime": 640 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/arguments/test_arguments.mdl",
+            "log": "\ntest_arguments.c:107:52: warning: implicit declaration of function '_SMOOTH_N' is invalid in C99 [-Wimplicit-function-declaration]\n_outer_multiple_middle_multiple_inner_multiple = _SMOOTH_N((__level5 / __aux5), _constant, 1.0, 2.0);\n^\n1 warning generated.\ntest_arguments.o: In function `evalAux':\ntest_arguments.c:(.text+0x2a4): undefined reference to `_SMOOTH_N'\ntest_arguments.c:(.text+0x2ff): undefined reference to `_SMOOTH_N'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_arguments] Error 1\n",
+            "codeGenerationTime": 1661,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/builtin_max/builtin_max.mdl",
+            "log": "",
+            "codeGenerationTime": 1309,
+            "codeCompilationTime": 1512,
+            "codeExecutionTime": 634 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/builtin_min/builtin_min.mdl",
+            "log": "",
+            "codeGenerationTime": 1321,
+            "codeCompilationTime": 1576,
+            "codeExecutionTime": 643 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/chained_initialization/test_chained_initialization.mdl",
+            "log": "",
+            "codeGenerationTime": 1483,
+            "codeCompilationTime": 1734,
+            "codeExecutionTime": 715 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/constant_expressions/test_constant_expressions.mdl",
+            "log": "",
+            "codeGenerationTime": 1343,
+            "codeCompilationTime": 1601,
+            "codeExecutionTime": 646 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/delay_parentheses/test_delay_parentheses.mdl",
+            "log": "",
+            "codeGenerationTime": 1388,
+            "codeCompilationTime": 1667,
+            "codeExecutionTime": 635 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/delay_pipeline/test_pipeline_delays.mdl",
+            "log": "\ntest_pipeline_delays.c:72:32: warning: implicit declaration of function '_DELAY_N' is invalid in C99 [-Wimplicit-function-declaration]\n_output_second_order_delay = _DELAY_N(_input, _fractional_delay_time, _initial_value, 2.0);\n^\ntest_pipeline_delays.c:80:39: warning: implicit declaration of function '_DELAY_FIXED' is invalid in C99 [-Wimplicit-function-declaration]\n_output_fractional_pipeline_delay = _DELAY_FIXED(_input, _fractional_delay_time, _initial_value);\n^\n2 warnings generated.\ntest_pipeline_delays.o: In function `evalAux':\ntest_pipeline_delays.c:(.text+0xf0): undefined reference to `_DELAY_N'\ntest_pipeline_delays.c:(.text+0x126): undefined reference to `_DELAY_N'\ntest_pipeline_delays.c:(.text+0x15c): undefined reference to `_DELAY_N'\ntest_pipeline_delays.c:(.text+0x192): undefined reference to `_DELAY_N'\ntest_pipeline_delays.c:(.text+0x1c0): undefined reference to `_DELAY_FIXED'\ntest_pipeline_delays.c:(.text+0x20f): undefined reference to `_DELAY_FIXED'\ntest_pipeline_delays.c:(.text+0x24d): undefined reference to `_DELAY_FIXED'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_pipeline_delays] Error 1\n",
+            "codeGenerationTime": 1550,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/delays/test_delays.mdl",
+            "log": "\ntest_delays.c:116:19: warning: implicit declaration of function '_DELAY_N' is invalid in C99 [-Wimplicit-function-declaration]\n_outputdelayn = _DELAY_N(_input, _delay_time, _initial_value, _order_variable);\n^\n1 warning generated.\ntest_delays.o: In function `evalAux':\ntest_delays.c:(.text+0x22d): undefined reference to `_DELAY_N'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_delays] Error 1\n",
+            "codeGenerationTime": 1582,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/euler_step_vs_saveper/test_euler_step_vs_saveper.mdl",
+            "log": "",
+            "codeGenerationTime": 1316,
+            "codeCompilationTime": 1673,
+            "codeExecutionTime": 645 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/exp/test_exp.mdl",
+            "log": "",
+            "codeGenerationTime": 1272,
+            "codeCompilationTime": 1521,
+            "codeExecutionTime": 656 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/exponentiation/exponentiation.mdl",
+            "log": "",
+            "codeGenerationTime": 1393,
+            "codeCompilationTime": 1594,
+            "codeExecutionTime": 738 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/function_capitalization/test_function_capitalization.mdl",
+            "log": "",
+            "codeGenerationTime": 1367,
+            "codeCompilationTime": 1597,
+            "codeExecutionTime": 617 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/game/test_game.mdl",
+            "log": "",
+            "codeGenerationTime": 1340,
+            "codeCompilationTime": 1539,
+            "codeExecutionTime": 684 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/if_stmt/if_stmt.mdl",
+            "log": "",
+            "codeGenerationTime": 1274,
+            "codeCompilationTime": 1686,
+            "codeExecutionTime": 660 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/incomplete_equations/test_incomplete_model.mdl",
+            "log": "\nERROR: no var found for refId : '_var_a'\nERROR: no var found for refId : '_var_a'\nERROR: no var found for refId : '_var_a'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'varType' of undefined\nat propEq (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/propEq.js:33:25)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry3.js:32:18\nat f1 (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry1.js:18:17)\nat _filter (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_filter.js:7:9)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/filter.js:52:3\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as filter] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat refs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Model.js:422:21)\nat R.forEach.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Model.js:436:56)\nat forEach (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/forEach.js:45:5)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/initial_function/test_initial.mdl",
+            "log": "",
+            "codeGenerationTime": 1251,
+            "codeCompilationTime": 1542,
+            "codeExecutionTime": 646 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/input_functions/test_inputs.mdl",
+            "log": "\ntest_inputs.c:59:23: warning: implicit declaration of function '_PULSE_TRAIN' is invalid in C99 [-Wimplicit-function-declaration]\n_test_pulse_train = _PULSE_TRAIN(7.0, 1.0, 2.0, 12.0);\n^\n1 warning generated.\ntest_inputs.o: In function `evalAux':\ntest_inputs.c:(.text+0xd0): undefined reference to `_PULSE_TRAIN'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_inputs] Error 1\n",
+            "codeGenerationTime": 1348,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/limits/test_limits.mdl",
+            "log": "",
+            "codeGenerationTime": 1252,
+            "codeCompilationTime": 1674,
+            "codeExecutionTime": 638 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/line_breaks/test_line_breaks.mdl",
+            "log": "",
+            "codeGenerationTime": 1252,
+            "codeCompilationTime": 1549,
+            "codeExecutionTime": 677 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/line_continuation/test_line_continuation.mdl",
+            "log": "",
+            "codeGenerationTime": 1337,
+            "codeCompilationTime": 1622,
+            "codeExecutionTime": 658 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/ln/test_ln.mdl",
+            "log": "",
+            "codeGenerationTime": 1279,
+            "codeCompilationTime": 1600,
+            "codeExecutionTime": 659 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/log/test_log.mdl",
+            "log": "\ntest_log.c:55:15: warning: implicit declaration of function '_LOG' is invalid in C99 [-Wimplicit-function-declaration]\n_log_test = _LOG(_x, _base);\n^\n1 warning generated.\ntest_log.o: In function `evalAux':\ntest_log.c:(.text+0x92): undefined reference to `_LOG'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_log] Error 1\n",
+            "codeGenerationTime": 1336,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/logicals/test_logicals.mdl",
+            "log": "",
+            "codeGenerationTime": 1307,
+            "codeCompilationTime": 1706,
+            "codeExecutionTime": 703 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups/test_lookups.mdl",
+            "log": "",
+            "codeGenerationTime": 1498,
+            "codeCompilationTime": 1640,
+            "codeExecutionTime": 647 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_funcnames/test_lookups_funcnames.mdl",
+            "log": "",
+            "codeGenerationTime": 1392,
+            "codeCompilationTime": 1691,
+            "codeExecutionTime": 646 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_inline/test_lookups_inline.mdl",
+            "log": "",
+            "codeGenerationTime": 1385,
+            "codeCompilationTime": 1623,
+            "codeExecutionTime": 643 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_inline_bounded/test_lookups_inline_bounded.mdl",
+            "log": "",
+            "codeGenerationTime": 1372,
+            "codeCompilationTime": 1550,
+            "codeExecutionTime": 623 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/lookups_with_expr/test_lookups_with_expr.mdl",
+            "log": "\ntest_lookups_with_expr.c:23:10: error: expected expression\n_sin = ;\n^\ntest_lookups_with_expr.c:25:18: error: expected expression\n_with_lookup = ;\n^\n2 errors generated.\nmake: *** [test_lookups_with_expr.o] Error 1\n",
+            "codeGenerationTime": 1250,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_without_range/test_lookups_without_range.mdl",
+            "log": "",
+            "codeGenerationTime": 1367,
+            "codeCompilationTime": 1621,
+            "codeExecutionTime": 634 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_cross_reference/test_macro_cross_reference.mdl",
+            "log": "\ntest_macro_cross_reference.c:55:19: warning: implicit declaration of function '_EXPRESSION_MACRO' is invalid in C99 [-Wimplicit-function-declaration]\n_macro_output = _EXPRESSION_MACRO(_macro_input, _macro_parameter);\n^\n1 warning generated.\ntest_macro_cross_reference.o: In function `evalAux':\ntest_macro_cross_reference.c:(.text+0x92): undefined reference to `_EXPRESSION_MACRO'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_macro_cross_reference] Error 1\n",
+            "codeGenerationTime": 1298,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_expression/test_macro_expression.mdl",
+            "log": "\ntest_macro_expression.c:55:19: warning: implicit declaration of function '_EXPRESSION_MACRO' is invalid in C99 [-Wimplicit-function-declaration]\n_macro_output = _EXPRESSION_MACRO(_macro_input, _macro_parameter);\n^\n1 warning generated.\ntest_macro_expression.o: In function `evalAux':\ntest_macro_expression.c:(.text+0x92): undefined reference to `_EXPRESSION_MACRO'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_macro_expression] Error 1\n",
+            "codeGenerationTime": 1248,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_multi_expression/test_macro_multi_expression.mdl",
+            "log": "\ntest_macro_multi_expression.c:55:19: warning: implicit declaration of function '_EXPRESSION_MACRO' is invalid in C99 [-Wimplicit-function-declaration]\n_macro_output = _EXPRESSION_MACRO(_macro_input, _macro_parameter);\n^\n1 warning generated.\ntest_macro_multi_expression.o: In function `evalAux':\ntest_macro_multi_expression.c:(.text+0x92): undefined reference to `_EXPRESSION_MACRO'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_macro_multi_expression] Error 1\n",
+            "codeGenerationTime": 1311,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_multi_macros/test_macro_multi_macros.mdl",
+            "log": "\ntest_macro_multi_macros.c:56:19: warning: implicit declaration of function '_EXPRESSION_MACRO' is invalid in C99 [-Wimplicit-function-declaration]\n_macro_output = _EXPRESSION_MACRO(_macro_input, _macro_parameter);\n^\ntest_macro_multi_macros.c:58:26: warning: implicit declaration of function '_SECOND_MACRO' is invalid in C99 [-Wimplicit-function-declaration]\n_second_macro_output = _SECOND_MACRO(_macro_input, _macro_parameter);\n^\n2 warnings generated.\ntest_macro_multi_macros.o: In function `evalAux':\ntest_macro_multi_macros.c:(.text+0x92): undefined reference to `_EXPRESSION_MACRO'\ntest_macro_multi_macros.c:(.text+0xb8): undefined reference to `_SECOND_MACRO'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_macro_multi_macros] Error 1\n",
+            "codeGenerationTime": 1296,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_output/test_macro_output.mdl",
+            "log": "\ntest_macro_output.c:7:8: error: redefinition of '_macro_input' with a different type: 'double' vs 'Lookup *'\ndouble _macro_input;\n^\ntest_macro_output.c:4:9: note: previous definition is here\nLookup* _macro_input;\n^\ntest_macro_output.c:24:23: error: expected expression\n_expression_macro = ;\n^\ntest_macro_output.c:26:16: error: assigning to 'Lookup *' from incompatible type 'double'\n_macro_input = 5.0;\n^ ~~~\ntest_macro_output.c:59:13: error: passing 'Lookup *' to parameter of incompatible type 'double'\noutputVar(_macro_input);\n^~~~~~~~~~~~\n./sde.h:64:23: note: passing argument to parameter 'value' here\nvoid outputVar(double value);\n^\n4 errors generated.\nmake: *** [test_macro_output.o] Error 1\n",
+            "codeGenerationTime": 1334,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_stock/test_macro_stock.mdl",
+            "log": "\ntest_macro_stock.c:55:19: warning: implicit declaration of function '_EXPRESSION_MACRO' is invalid in C99 [-Wimplicit-function-declaration]\n_macro_output = _EXPRESSION_MACRO(_macro_input, _macro_parameter);\n^\n1 warning generated.\ntest_macro_stock.o: In function `evalAux':\ntest_macro_stock.c:(.text+0x92): undefined reference to `_EXPRESSION_MACRO'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_macro_stock] Error 1\n",
+            "codeGenerationTime": 1305,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_trailing_definition/test_macro_trailing_definition.mdl",
+            "log": "\ntest_macro_trailing_definition.c:55:19: warning: implicit declaration of function '_EXPRESSION_MACRO' is invalid in C99 [-Wimplicit-function-declaration]\n_macro_output = _EXPRESSION_MACRO(_macro_input, _macro_parameter);\n^\n1 warning generated.\ntest_macro_trailing_definition.o: In function `evalAux':\ntest_macro_trailing_definition.c:(.text+0x92): undefined reference to `_EXPRESSION_MACRO'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_macro_trailing_definition] Error 1\n",
+            "codeGenerationTime": 1266,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/model_doc/model_doc.mdl",
+            "log": "",
+            "codeGenerationTime": 1218,
+            "codeCompilationTime": 1657,
+            "codeExecutionTime": 750 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/number_handling/test_number_handling.mdl",
+            "log": "",
+            "codeGenerationTime": 1346,
+            "codeCompilationTime": 1565,
+            "codeExecutionTime": 710 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/parentheses/test_parens.mdl",
+            "log": "",
+            "codeGenerationTime": 1301,
+            "codeCompilationTime": 1555,
+            "codeExecutionTime": 656 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/reference_capitalization/test_reference_capitalization.mdl",
+            "log": "",
+            "codeGenerationTime": 1286,
+            "codeCompilationTime": 1648,
+            "codeExecutionTime": 674 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/rounding/test_rounding.mdl",
+            "log": "",
+            "codeGenerationTime": 1325,
+            "codeCompilationTime": 1592,
+            "codeExecutionTime": 665 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/smooth/test_smooth.mdl",
+            "log": "\ntest_smooth.c:98:22: warning: implicit declaration of function '_SMOOTH_N' is invalid in C99 [-Wimplicit-function-declaration]\n_smooth_n_output = _SMOOTH_N(_input, _adjustment_time, _initial_value, _variable_order);\n^\n1 warning generated.\ntest_smooth.o: In function `evalAux':\ntest_smooth.c:(.text+0x19d): undefined reference to `_SMOOTH_N'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_smooth] Error 1\n",
+            "codeGenerationTime": 1496,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/smooth_and_stock/test_smooth_and_stock.mdl",
+            "log": "",
+            "codeGenerationTime": 1446,
+            "codeCompilationTime": 1526,
+            "codeExecutionTime": 643 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/special_characters/test_special_variable_names.mdl",
+            "log": "\nline 3:1 token recognition error at: '_variable with '\nline 3:17 token recognition error at: '_Quotes'\nline 3:25 token recognition error at: '_ in 'it' and '\nERROR: no var found for refId : '_backslashes!'\nERROR: no var found for refId : '_backslashes!'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'varType' of undefined\nat propEq (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/propEq.js:33:25)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry3.js:32:18\nat f1 (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry1.js:18:17)\nat _filter (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_filter.js:7:9)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/filter.js:52:3\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as filter] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat refs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Model.js:422:21)\nat R.forEach.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Model.js:436:56)\nat forEach (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/forEach.js:45:5)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/sqrt/test_sqrt.mdl",
+            "log": "",
+            "codeGenerationTime": 1362,
+            "codeCompilationTime": 1531,
+            "codeExecutionTime": 637 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/stocks_with_expressions/test_stock_with_expression.mdl",
+            "log": "",
+            "codeGenerationTime": 1360,
+            "codeCompilationTime": 1540,
+            "codeExecutionTime": 617 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/subscript_1d_arrays/test_subscript_1d_arrays.mdl",
+            "log": "",
+            "codeGenerationTime": 1427,
+            "codeCompilationTime": 1695,
+            "codeExecutionTime": 653 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_2d_arrays/test_subscript_2d_arrays.mdl",
+            "log": "\nline 3:5 token recognition error at: ';'\nERROR: no dimension for constant list : '_initial_values'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'family' of undefined\nat R.map.subscriptName (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:51)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as map] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat subscriptFamilies (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:12)\nat decl (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:137:22)\nat R.pipe.R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:141:38)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_3d_arrays/test_subscript_3d_arrays.mdl",
+            "log": "\nline 22:5 token recognition error at: ';'\nERROR: no dimension for constant list : '_initial_values'\nERROR: no var found for refId : '_rate_a'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'family' of undefined\nat R.map.subscriptName (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:51)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as map] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat subscriptFamilies (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:12)\nat decl (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:137:22)\nat R.pipe.R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:141:38)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_3d_arrays_lengthwise/test_subscript_3d_arrays_lengthwise.mdl",
+            "log": "\nline 27:11 token recognition error at: ';'\nERROR: the number of dimensions does not match the number of constants in constant list : '_three_dimensional_constant'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: console.err is not a function\nat ModelLHSReader.visitSubscriptList (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelLHSReader.js:90:15)\nat SubscriptListContext.accept (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelParser.js:1713:24)\nat ModelLHSReader.visitLhs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelReader.js:48:27)\nat ModelLHSReader.visitLhs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelLHSReader.js:43:11)\nat ModelLHSReader.read (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelLHSReader.js:29:10)\nat R.sortBy.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:181:24)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/sortBy.js:39:14\nat Array.sort (native)\nat sortBy (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/sortBy.js:38:46)\nat Object.f2 [as sortBy] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_3d_arrays_widthwise/test_subscript_3d_arrays_widthwise.mdl",
+            "log": "\nline 27:11 token recognition error at: ';'\nERROR: no dimension for constant list : '_three_dimensional_constant'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: console.err is not a function\nat ModelLHSReader.visitSubscriptList (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelLHSReader.js:90:15)\nat SubscriptListContext.accept (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelParser.js:1713:24)\nat ModelLHSReader.visitLhs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelReader.js:48:27)\nat ModelLHSReader.visitLhs (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelLHSReader.js:43:11)\nat ModelLHSReader.read (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelLHSReader.js:29:10)\nat R.sortBy.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:181:24)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/sortBy.js:39:14\nat Array.sort (native)\nat sortBy (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/sortBy.js:38:46)\nat Object.f2 [as sortBy] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_aggregation/test_subscript_aggregation.mdl",
+            "log": "\nline 75:5 token recognition error at: ';'\nERROR: no dimension for constant list : '_initial_values'\nERROR: no var found for refId : '_stock_a'\nERROR: no var found for refId : '_stock_a'\nERROR: no var found for refId : '_stock_a'\nERROR: no var found for refId : '_stock_a'\nERROR: no var found for refId : '_stock_a'\nERROR: no var found for refId : '_stock_a'\nERROR: no var found for refId : '_stock_a'\nERROR: no var found for refId : '_stock_a'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'family' of undefined\nat R.map.subscriptName (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:51)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as map] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat subscriptFamilies (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:12)\nat decl (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:137:22)\nat R.pipe.R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:141:38)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/subscript_constant_call/test_subscript_constant_call.mdl",
+            "log": "",
+            "codeGenerationTime": 1270,
+            "codeCompilationTime": 1601,
+            "codeExecutionTime": 629 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_docs/subscript_docs.mdl",
+            "log": "\nline 3:11 token recognition error at: ';'\nERROR: no dimension for constant list : '_element1'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'family' of undefined\nat R.map.subscriptName (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:51)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as map] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat subscriptFamilies (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:12)\nat decl (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:137:22)\nat R.pipe.R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:141:38)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_individually_defined_1_of_2d_arrays/subscript_individually_defined_1_of_2d_arrays.mdl",
+            "log": "\nline 3:5 token recognition error at: ';'\nERROR: no dimension for constant list : '_initial_values'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'family' of undefined\nat R.map.subscriptName (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:51)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as map] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat subscriptFamilies (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:12)\nat decl (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:137:22)\nat R.pipe.R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:141:38)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_individually_defined_1_of_2d_arrays_from_floats/subscript_individually_defined_1_of_2d_arrays_from_floats.mdl",
+            "log": "\nline 3:5 token recognition error at: ';'\nERROR: no dimension for constant list : '_initial_values'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'family' of undefined\nat R.map.subscriptName (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:51)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as map] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat subscriptFamilies (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:12)\nat decl (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:137:22)\nat R.pipe.R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:141:38)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/subscript_individually_defined_1d_arrays/subscript_individually_defined_1d_arrays.mdl",
+            "log": "",
+            "codeGenerationTime": 1326,
+            "codeCompilationTime": 1537,
+            "codeExecutionTime": 666 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_individually_defined_stocks/test_subscript_individually_defined_stocks.mdl",
+            "log": "\nline 27:5 token recognition error at: ';'\nERROR: no dimension for constant list : '_initial_values'\nERROR: no var found for refId : '_rate_a'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'family' of undefined\nat R.map.subscriptName (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:51)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat Object.f2 [as map] (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:29:14)\nat subscriptFamilies (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/Subscript.js:170:12)\nat decl (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:137:22)\nat R.pipe.R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:141:38)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_mixed_assembly/test_subscript_mixed_assembly.mdl",
+            "log": "\ntest_subscript_mixed_assembly.c:7:8: error: redefinition of '_mixed_assembly' with a different type: 'double [3][2]' vs 'double [3]'\ndouble _mixed_assembly[3][2];\n^\ntest_subscript_mixed_assembly.c:6:8: note: previous definition is here\ndouble _mixed_assembly[3];\n^\ntest_subscript_mixed_assembly.c:65:28: error: subscripted value is not an array, pointer, or vector\n_mixed_assembly[_dim1[i]][0] = _subset[_dim1[i]];\n~~~~~~~~~~~~~~~~~~~~~~~~~^~\ntest_subscript_mixed_assembly.c:83:31: error: subscripted value is not an array, pointer, or vector\noutputVar(_mixed_assembly[0][0]);\n~~~~~~~~~~~~~~~~~~^~\ntest_subscript_mixed_assembly.c:84:31: error: subscripted value is not an array, pointer, or vector\noutputVar(_mixed_assembly[1][0]);\n~~~~~~~~~~~~~~~~~~^~\ntest_subscript_mixed_assembly.c:85:31: error: subscripted value is not an array, pointer, or vector\noutputVar(_mixed_assembly[2][0]);\n~~~~~~~~~~~~~~~~~~^~\ntest_subscript_mixed_assembly.c:86:31: error: subscripted value is not an array, pointer, or vector\noutputVar(_mixed_assembly[0][1]);\n~~~~~~~~~~~~~~~~~~^~\ntest_subscript_mixed_assembly.c:87:31: error: subscripted value is not an array, pointer, or vector\noutputVar(_mixed_assembly[1][1]);\n~~~~~~~~~~~~~~~~~~^~\ntest_subscript_mixed_assembly.c:88:31: error: subscripted value is not an array, pointer, or vector\noutputVar(_mixed_assembly[2][1]);\n~~~~~~~~~~~~~~~~~~^~\n8 errors generated.\nmake: *** [test_subscript_mixed_assembly.o] Error 1\n",
+            "codeGenerationTime": 1332,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/subscript_multiples/test_multiple_subscripts.mdl",
+            "log": "",
+            "codeGenerationTime": 1413,
+            "codeCompilationTime": 1665,
+            "codeExecutionTime": 739 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_selection/subscript_selection.mdl",
+            "log": "\nline 21:5 token recognition error at: ';'\nERROR: the number of dimensions does not match the number of constants in constant list : '_two_dimensional_variable'\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'getText' of undefined\nat EquationGen.visitConstList (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/EquationGen.js:583:47)\nat ConstListContext.accept (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelParser.js:770:24)\nat EquationGen.visitEquation (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelReader.js:37:25)\nat EquationGen.generate (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/EquationGen.js:102:10)\nat R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:15:74)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry2.js:22:18\nat f1 (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_curry1.js:18:17)",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/subscript_subranges/test_subscript_subrange.mdl",
+            "log": "",
+            "codeGenerationTime": 1432,
+            "codeCompilationTime": 1591,
+            "codeExecutionTime": 746 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/subscript_subranges_equal/test_subscript_subrange_equal.mdl",
+            "log": "",
+            "codeGenerationTime": 1384,
+            "codeCompilationTime": 1635,
+            "codeExecutionTime": 665 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_switching/subscript_switching.mdl",
+            "log": "\nline 52:22 token recognition error at: ';'\nERROR: marked dimension __ not found in var _switching_out\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/yargs/yargs.js:1079\nelse throw err\n^\n\nTypeError: Cannot read property 'size' of undefined\nat EquationGen.visitCall (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/EquationGen.js:318:32)\nat CallContext.accept (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelParser.js:858:24)\nat EquationGen.visitMulDiv (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/EquationGen.js:611:17)\nat MulDivContext.accept (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelParser.js:942:24)\nat EquationGen.visitEquation (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/ModelReader.js:35:20)\nat EquationGen.generate (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/EquationGen.js:102:10)\nat R.map.v (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/src/CodeGen.js:15:74)\nat _map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_map.js:6:19)\nat map (/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/map.js:64:14)\nat /extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/sdeverywhere/node_modules/ramda/src/internal/_dispatchable.js:41:15",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/subscript_updimensioning/test_subscript_updimensioning.mdl",
+            "log": "",
+            "codeGenerationTime": 1307,
+            "codeCompilationTime": 1702,
+            "codeExecutionTime": 675 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscripted_delays/test_subscripted_delays.mdl",
+            "log": "\ntest_subscripted_delays.c:228:45: warning: implicit declaration of function '_DELAY_N' is invalid in C99 [-Wimplicit-function-declaration]\n_outflow_delayn[_apples[i]][_citrus[j]] = _DELAY_N(_inflow_delayn[_apples[i]][_citrus[j]], _delay[_apples[i]], 10.0, 6.0);\n^\ntest_subscripted_delays.c:240:79: error: invalid operands to binary expression ('Lookup *' and 'double')\n_outflow_delay1[_apples[i]][_citrus[j]] = (__level4[_apples[i]][_citrus[j]] / __aux4[_apples[i]][_citrus[j]]);\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\ntest_subscripted_delays.c:252:80: error: invalid operands to binary expression ('Lookup *' and 'double')\n_outflow_delay1i[_apples[i]][_citrus[j]] = (__level5[_apples[i]][_citrus[j]] / __aux5[_apples[i]][_citrus[j]]);\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n1 warning and 2 errors generated.\nmake: *** [test_subscripted_delays.o] Error 1\n",
+            "codeGenerationTime": 2198,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/subscripted_flows/test_subscripted_flows.mdl",
+            "log": "",
+            "codeGenerationTime": 1399,
+            "codeCompilationTime": 1563,
+            "codeExecutionTime": 642 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/time/test_time.mdl",
+            "log": "",
+            "codeGenerationTime": 1373,
+            "codeCompilationTime": 1523,
+            "codeExecutionTime": 619 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/trend/test_trend.mdl",
+            "log": "\ntest_trend.c:58:21: warning: implicit declaration of function '_TREND' is invalid in C99 [-Wimplicit-function-declaration]\n_trend_of_input = _TREND(_input, _average_time, _initial_trend);\n^\n1 warning generated.\ntest_trend.o: In function `evalAux':\ntest_trend.c:(.text+0xc7): undefined reference to `_TREND'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_trend] Error 1\n",
+            "codeGenerationTime": 1449,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/trig/test_trig.mdl",
+            "log": "\ntest_trig.c:61:18: warning: implicit declaration of function '_ARCCOS' is invalid in C99 [-Wimplicit-function-declaration]\n_test_arccos = _ARCCOS(_test_cos);\n^\ntest_trig.c:65:18: warning: implicit declaration of function '_ARCSIN' is invalid in C99 [-Wimplicit-function-declaration]\n_test_arcsin = _ARCSIN(_test_sin);\n^\ntest_trig.c:67:15: warning: implicit declaration of function '_TAN' is invalid in C99 [-Wimplicit-function-declaration]\n_test_tan = _TAN(_stocka);\n^\ntest_trig.c:69:18: warning: implicit declaration of function '_ARCTAN' is invalid in C99 [-Wimplicit-function-declaration]\n_test_arctan = _ARCTAN(_test_tan);\n^\n4 warnings generated.\ntest_trig.o: In function `evalAux':\ntest_trig.c:(.text+0x97): undefined reference to `_ARCCOS'\ntest_trig.c:(.text+0xc2): undefined reference to `_ARCSIN'\ntest_trig.c:(.text+0xe0): undefined reference to `_TAN'\ntest_trig.c:(.text+0xf6): undefined reference to `_ARCTAN'\nclang-3.8: error: linker command failed with exit code 1 (use -v to see invocation)\nmake: *** [test_trig] Error 1\n",
+            "codeGenerationTime": 1368,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/unicode_characters/unicode_test_model.mdl",
+            "log": "",
+            "codeGenerationTime": 1277,
+            "codeCompilationTime": 1511,
+            "codeExecutionTime": 633 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/variable_ranges/test_variable_ranges.mdl",
+            "log": "",
+            "codeGenerationTime": 1479,
+            "codeCompilationTime": 1594,
+            "codeExecutionTime": 648 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/xidz_zidz/xidz_zidz.mdl",
+            "log": "",
+            "codeGenerationTime": 1288,
+            "codeCompilationTime": 1530,
+            "codeExecutionTime": 665 
+        }
+    ]
+,
+    "pysdResults":     [
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/Lotka_Volterra/Lotka_Volterra.mdl",
+            "log": "\nCommand is ./testModels/samples/Lotka_Volterra/Lotka_Volterra.mdl\nModel file name is ./testModels/samples/Lotka_Volterra/Lotka_Volterra.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1580,
+            "codeExecutionTime": 2020 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/samples/Population/Subscripted",
+            "log": "\nCommand is ./testModels/samples/Population/Subscripted\nModel file name is ./testModels/samples/Population/Subscripted\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 886, in translate_vensim\nwith open(mdl_file, 'r', encoding='UTF-8') as in_file:\nFileNotFoundError: [Errno 2] No such file or directory: './testModels/samples/Population/Subscripted'",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "Population",
+            "log": "\nCommand is Population\nModel file name is Population\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 886, in translate_vensim\nwith open(mdl_file, 'r', encoding='UTF-8') as in_file:\nFileNotFoundError: [Errno 2] No such file or directory: 'Population'",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "Model.mdl",
+            "log": "\nCommand is Model.mdl\nModel file name is Model.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 886, in translate_vensim\nwith open(mdl_file, 'r', encoding='UTF-8') as in_file:\nFileNotFoundError: [Errno 2] No such file or directory: 'Model.mdl'",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/Roessler_Chaos/roessler_chaos.mdl",
+            "log": "\nCommand is ./testModels/samples/Roessler_Chaos/roessler_chaos.mdl\nModel file name is ./testModels/samples/Roessler_Chaos/roessler_chaos.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1272,
+            "codeExecutionTime": 2396 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/SIR/SIR.mdl",
+            "log": "\nCommand is ./testModels/samples/SIR/SIR.mdl\nModel file name is ./testModels/samples/SIR/SIR.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1318,
+            "codeExecutionTime": 2148 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/Workforce/workforce.mdl",
+            "log": "\nCommand is ./testModels/samples/Workforce/workforce.mdl\nModel file name is ./testModels/samples/Workforce/workforce.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1792,
+            "codeExecutionTime": 4131 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/pendulum/Single_Pendulum.mdl",
+            "log": "\nCommand is ./testModels/samples/pendulum/Single_Pendulum.mdl\nModel file name is ./testModels/samples/pendulum/Single_Pendulum.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1507,
+            "codeExecutionTime": 2773 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/teacup/teacup.mdl",
+            "log": "\nCommand is ./testModels/samples/teacup/teacup.mdl\nModel file name is ./testModels/samples/teacup/teacup.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1150,
+            "codeExecutionTime": 1167 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/samples/teacup/teacup_mdl.mdl",
+            "log": "\nCommand is ./testModels/samples/teacup/teacup_mdl.mdl\nModel file name is ./testModels/samples/teacup/teacup_mdl.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1122,
+            "codeExecutionTime": 1266 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/abs/test_abs.mdl",
+            "log": "\nCommand is ./testModels/tests/abs/test_abs.mdl\nModel file name is ./testModels/tests/abs/test_abs.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1060,
+            "codeExecutionTime": 1128 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/active_initial/test_active_initial.mdl",
+            "log": "\nCommand is ./testModels/tests/active_initial/test_active_initial.mdl\nModel file name is ./testModels/tests/active_initial/test_active_initial.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1088,
+            "codeExecutionTime": 1142 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/arguments/test_arguments.mdl",
+            "log": "\nCommand is ./testModels/tests/arguments/test_arguments.mdl\nModel file name is ./testModels/tests/arguments/test_arguments.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1213,
+            "codeExecutionTime": 1361 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/builtin_max/builtin_max.mdl",
+            "log": "\nCommand is ./testModels/tests/builtin_max/builtin_max.mdl\nModel file name is ./testModels/tests/builtin_max/builtin_max.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1022,
+            "codeExecutionTime": 1042 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/builtin_min/builtin_min.mdl",
+            "log": "\nCommand is ./testModels/tests/builtin_min/builtin_min.mdl\nModel file name is ./testModels/tests/builtin_min/builtin_min.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 981,
+            "codeExecutionTime": 1047 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/chained_initialization/test_chained_initialization.mdl",
+            "log": "\nCommand is ./testModels/tests/chained_initialization/test_chained_initialization.mdl\nModel file name is ./testModels/tests/chained_initialization/test_chained_initialization.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1372,
+            "codeExecutionTime": 1356 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/constant_expressions/test_constant_expressions.mdl",
+            "log": "\nCommand is ./testModels/tests/constant_expressions/test_constant_expressions.mdl\nModel file name is ./testModels/tests/constant_expressions/test_constant_expressions.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1002,
+            "codeExecutionTime": 1106 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/delay_parentheses/test_delay_parentheses.mdl",
+            "log": "\nCommand is ./testModels/tests/delay_parentheses/test_delay_parentheses.mdl\nModel file name is ./testModels/tests/delay_parentheses/test_delay_parentheses.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1099,
+            "codeExecutionTime": 1139 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/delay_pipeline/test_pipeline_delays.mdl",
+            "log": "\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py:726: UserWarning: Delay fixed only approximates solution, may not give the same result as vensim\nwarnings.warn(_Delay fixed only approximates solution, may not give the same _\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py:194: UserWarning: Casting delay order from 2.500000 to 2\nwarnings.warn('Casting delay order from %f to %i' % (order, int(order)))\nCommand is ./testModels/tests/delay_pipeline/test_pipeline_delays.mdl\nModel file name is ./testModels/tests/delay_pipeline/test_pipeline_delays.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1620,
+            "codeExecutionTime": 1694 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/delays/test_delays.mdl",
+            "log": "\nCommand is ./testModels/tests/delays/test_delays.mdl\nModel file name is ./testModels/tests/delays/test_delays.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1375,
+            "codeExecutionTime": 1483 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/euler_step_vs_saveper/test_euler_step_vs_saveper.mdl",
+            "log": "\nCommand is ./testModels/tests/euler_step_vs_saveper/test_euler_step_vs_saveper.mdl\nModel file name is ./testModels/tests/euler_step_vs_saveper/test_euler_step_vs_saveper.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1013,
+            "codeExecutionTime": 1281 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/exp/test_exp.mdl",
+            "log": "\nCommand is ./testModels/tests/exp/test_exp.mdl\nModel file name is ./testModels/tests/exp/test_exp.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1057,
+            "codeExecutionTime": 1127 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/exponentiation/exponentiation.mdl",
+            "log": "\nCommand is ./testModels/tests/exponentiation/exponentiation.mdl\nModel file name is ./testModels/tests/exponentiation/exponentiation.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1178,
+            "codeExecutionTime": 1163 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/function_capitalization/test_function_capitalization.mdl",
+            "log": "\nCommand is ./testModels/tests/function_capitalization/test_function_capitalization.mdl\nModel file name is ./testModels/tests/function_capitalization/test_function_capitalization.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1198,
+            "codeExecutionTime": 1329 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/game/test_game.mdl",
+            "log": "\nCommand is ./testModels/tests/game/test_game.mdl\nModel file name is ./testModels/tests/game/test_game.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1149,
+            "codeExecutionTime": 1179 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/if_stmt/if_stmt.mdl",
+            "log": "\nCommand is ./testModels/tests/if_stmt/if_stmt.mdl\nModel file name is ./testModels/tests/if_stmt/if_stmt.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1062,
+            "codeExecutionTime": 1133 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/incomplete_equations/test_incomplete_model.mdl",
+            "log": "\n/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py:510: SyntaxWarning: Unspecified Eqn has no equation specified\nelement['real_name'], args)\n./testModels/tests/incomplete_equations/test_incomplete_model.py:125: RuntimeWarning: Call to undefined function, calling dependencies and returning NaN\nreturn functions.incomplete(var_a(), var_b())\nCommand is ./testModels/tests/incomplete_equations/test_incomplete_model.mdl\nModel file name is ./testModels/tests/incomplete_equations/test_incomplete_model.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1213,
+            "codeExecutionTime": 1191 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/initial_function/test_initial.mdl",
+            "log": "\nCommand is ./testModels/tests/initial_function/test_initial.mdl\nModel file name is ./testModels/tests/initial_function/test_initial.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1056,
+            "codeExecutionTime": 1192 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/input_functions/test_inputs.mdl",
+            "log": "\nCommand is ./testModels/tests/input_functions/test_inputs.mdl\nModel file name is ./testModels/tests/input_functions/test_inputs.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1172,
+            "codeExecutionTime": 1285 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/limits/test_limits.mdl",
+            "log": "\nCommand is ./testModels/tests/limits/test_limits.mdl\nModel file name is ./testModels/tests/limits/test_limits.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1147,
+            "codeExecutionTime": 1131 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/line_breaks/test_line_breaks.mdl",
+            "log": "\nCommand is ./testModels/tests/line_breaks/test_line_breaks.mdl\nModel file name is ./testModels/tests/line_breaks/test_line_breaks.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1051,
+            "codeExecutionTime": 1092 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/line_continuation/test_line_continuation.mdl",
+            "log": "\nCommand is ./testModels/tests/line_continuation/test_line_continuation.mdl\nModel file name is ./testModels/tests/line_continuation/test_line_continuation.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1067,
+            "codeExecutionTime": 1262 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/ln/test_ln.mdl",
+            "log": "\nCommand is ./testModels/tests/ln/test_ln.mdl\nModel file name is ./testModels/tests/ln/test_ln.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1085,
+            "codeExecutionTime": 1167 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/log/test_log.mdl",
+            "log": "\nCommand is ./testModels/tests/log/test_log.mdl\nModel file name is ./testModels/tests/log/test_log.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1141,
+            "codeExecutionTime": 1056 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/logicals/test_logicals.mdl",
+            "log": "\nCommand is ./testModels/tests/logicals/test_logicals.mdl\nModel file name is ./testModels/tests/logicals/test_logicals.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1144,
+            "codeExecutionTime": 1147 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups/test_lookups.mdl",
+            "log": "\nCommand is ./testModels/tests/lookups/test_lookups.mdl\nModel file name is ./testModels/tests/lookups/test_lookups.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1161,
+            "codeExecutionTime": 1237 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_funcnames/test_lookups_funcnames.mdl",
+            "log": "\nCommand is ./testModels/tests/lookups_funcnames/test_lookups_funcnames.mdl\nModel file name is ./testModels/tests/lookups_funcnames/test_lookups_funcnames.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1263,
+            "codeExecutionTime": 1305 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_inline/test_lookups_inline.mdl",
+            "log": "\nCommand is ./testModels/tests/lookups_inline/test_lookups_inline.mdl\nModel file name is ./testModels/tests/lookups_inline/test_lookups_inline.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1058,
+            "codeExecutionTime": 1157 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_inline_bounded/test_lookups_inline_bounded.mdl",
+            "log": "\nCommand is ./testModels/tests/lookups_inline_bounded/test_lookups_inline_bounded.mdl\nModel file name is ./testModels/tests/lookups_inline_bounded/test_lookups_inline_bounded.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1020,
+            "codeExecutionTime": 1104 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_with_expr/test_lookups_with_expr.mdl",
+            "log": "\nCommand is ./testModels/tests/lookups_with_expr/test_lookups_with_expr.mdl\nModel file name is ./testModels/tests/lookups_with_expr/test_lookups_with_expr.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1051,
+            "codeExecutionTime": 1146 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/lookups_without_range/test_lookups_without_range.mdl",
+            "log": "\nCommand is ./testModels/tests/lookups_without_range/test_lookups_without_range.mdl\nModel file name is ./testModels/tests/lookups_without_range/test_lookups_without_range.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1286,
+            "codeExecutionTime": 1256 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_cross_reference/test_macro_cross_reference.mdl",
+            "log": "\nCommand is ./testModels/tests/macro_cross_reference/test_macro_cross_reference.mdl\nModel file name is ./testModels/tests/macro_cross_reference/test_macro_cross_reference.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 28, in <module>\nresult=model.run()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 656, in run\nreturn_columns = self._default_return_columns()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 686, in _default_return_columns\nsig = signature(getattr(self.components, value))\nAttributeError: 'module' object has no attribute 'second_macro'",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1194,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_expression/test_macro_expression.mdl",
+            "log": "\nCommand is ./testModels/tests/macro_expression/test_macro_expression.mdl\nModel file name is ./testModels/tests/macro_expression/test_macro_expression.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 28, in <module>\nresult=model.run()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 656, in run\nreturn_columns = self._default_return_columns()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 686, in _default_return_columns\nsig = signature(getattr(self.components, value))\nAttributeError: 'module' object has no attribute 'expression_macro'",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1152,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_multi_expression/test_macro_multi_expression.mdl",
+            "log": "\nCommand is ./testModels/tests/macro_multi_expression/test_macro_multi_expression.mdl\nModel file name is ./testModels/tests/macro_multi_expression/test_macro_multi_expression.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 28, in <module>\nresult=model.run()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 656, in run\nreturn_columns = self._default_return_columns()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 686, in _default_return_columns\nsig = signature(getattr(self.components, value))\nAttributeError: 'module' object has no attribute 'expression_macro'",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1167,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_multi_macros/test_macro_multi_macros.mdl",
+            "log": "\nCommand is ./testModels/tests/macro_multi_macros/test_macro_multi_macros.mdl\nModel file name is ./testModels/tests/macro_multi_macros/test_macro_multi_macros.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 28, in <module>\nresult=model.run()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 656, in run\nreturn_columns = self._default_return_columns()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 686, in _default_return_columns\nsig = signature(getattr(self.components, value))\nAttributeError: 'module' object has no attribute 'second_macro'",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1247,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_output/test_macro_output.mdl",
+            "log": "\nCommand is ./testModels/tests/macro_output/test_macro_output.mdl\nModel file name is ./testModels/tests/macro_output/test_macro_output.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 757, in parse_general_expression\ntree = parser.parse(element['expr'])\nFile _/usr/lib/python3.4/site-packages/parsimonious/grammar.py_, line 115, in parse\nreturn self.default_rule.parse(text, pos=pos)\nFile _/usr/lib/python3.4/site-packages/parsimonious/expressions.py_, line 122, in parse\nraise IncompleteParseError(text, node.end, self)\nparsimonious.exceptions.IncompleteParseError: Rule 'expr_type' matched in its entirety, but it didn't consume all the text. The non-matching portion of the text begins with '(macro input,macro p' (line 1, column 17).",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_stock/test_macro_stock.mdl",
+            "log": "\nCommand is ./testModels/tests/macro_stock/test_macro_stock.mdl\nModel file name is ./testModels/tests/macro_stock/test_macro_stock.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 28, in <module>\nresult=model.run()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 656, in run\nreturn_columns = self._default_return_columns()\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/functions.py_, line 686, in _default_return_columns\nsig = signature(getattr(self.components, value))\nAttributeError: 'module' object has no attribute 'expression_macro'",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1182,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/macro_trailing_definition/test_macro_trailing_definition.mdl",
+            "log": "\nCommand is ./testModels/tests/macro_trailing_definition/test_macro_trailing_definition.mdl\nModel file name is ./testModels/tests/macro_trailing_definition/test_macro_trailing_definition.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 814, in translate_section\nentry.update(get_equation_components(entry['eqn']))\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 264, in get_equation_components\ntree = parser.parse(equation_str)\nFile _/usr/lib/python3.4/site-packages/parsimonious/grammar.py_, line 115, in parse\nreturn self.default_rule.parse(text, pos=pos)\nFile _/usr/lib/python3.4/site-packages/parsimonious/expressions.py_, line 120, in parse\nnode = self.match(text, pos=pos)\nFile _/usr/lib/python3.4/site-packages/parsimonious/expressions.py_, line 137, in match\nraise error\nparsimonious.exceptions.ParseError: Rule 'entry' didn't match at ':MACRO: EXPRESSION M' (line 1, column 1).",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/model_doc/model_doc.mdl",
+            "log": "\nCommand is ./testModels/tests/model_doc/model_doc.mdl\nModel file name is ./testModels/tests/model_doc/model_doc.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1086,
+            "codeExecutionTime": 1053 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/number_handling/test_number_handling.mdl",
+            "log": "\nCommand is ./testModels/tests/number_handling/test_number_handling.mdl\nModel file name is ./testModels/tests/number_handling/test_number_handling.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1130,
+            "codeExecutionTime": 1187 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/parentheses/test_parens.mdl",
+            "log": "\nCommand is ./testModels/tests/parentheses/test_parens.mdl\nModel file name is ./testModels/tests/parentheses/test_parens.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1069,
+            "codeExecutionTime": 1218 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/reference_capitalization/test_reference_capitalization.mdl",
+            "log": "\nCommand is ./testModels/tests/reference_capitalization/test_reference_capitalization.mdl\nModel file name is ./testModels/tests/reference_capitalization/test_reference_capitalization.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 668, in visit_id\nreturn namespace[n.text.strip()]\nKeyError: 'capitalized variable'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 668, in visit_id\nreturn namespace[n.text.strip()]\nparsimonious.exceptions.VisitationError: KeyError: 'capitalized variable'\n\nParse tree:\n<Node called _id_ matching _capitalized variable_>  <-- *** We were here. ***\n<RegexNode called _basic_id_ matching _capitalized variable_>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/rounding/test_rounding.mdl",
+            "log": "\nCommand is ./testModels/tests/rounding/test_rounding.mdl\nModel file name is ./testModels/tests/rounding/test_rounding.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1160,
+            "codeExecutionTime": 1204 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/smooth/test_smooth.mdl",
+            "log": "\nCommand is ./testModels/tests/smooth/test_smooth.mdl\nModel file name is ./testModels/tests/smooth/test_smooth.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1427,
+            "codeExecutionTime": 1349 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/smooth_and_stock/test_smooth_and_stock.mdl",
+            "log": "\nCommand is ./testModels/tests/smooth_and_stock/test_smooth_and_stock.mdl\nModel file name is ./testModels/tests/smooth_and_stock/test_smooth_and_stock.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1221,
+            "codeExecutionTime": 1457 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/special_characters/test_special_variable_names.mdl",
+            "log": "\nCommand is ./testModels/tests/special_characters/test_special_variable_names.mdl\nModel file name is ./testModels/tests/special_characters/test_special_variable_names.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1361,
+            "codeExecutionTime": 1377 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/sqrt/test_sqrt.mdl",
+            "log": "\nCommand is ./testModels/tests/sqrt/test_sqrt.mdl\nModel file name is ./testModels/tests/sqrt/test_sqrt.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1125,
+            "codeExecutionTime": 1053 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/stocks_with_expressions/test_stock_with_expression.mdl",
+            "log": "\nCommand is ./testModels/tests/stocks_with_expressions/test_stock_with_expression.mdl\nModel file name is ./testModels/tests/stocks_with_expressions/test_stock_with_expression.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1232,
+            "codeExecutionTime": 1761 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_1d_arrays/test_subscript_1d_arrays.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_1d_arrays/test_subscript_1d_arrays.mdl\nModel file name is ./testModels/tests/subscript_1d_arrays/test_subscript_1d_arrays.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _0.01, 0.02, 0.03_>  <-- *** We were here. ***\n<Node matching _0.01, 0.02, 0.03_>\n<Node matching _0.01, _>\n<RegexNode called _number_ matching _0.01_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.02, _>\n<RegexNode called _number_ matching _0.02_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.03_>\n<RegexNode called _number_ matching _0.03_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_2d_arrays/test_subscript_2d_arrays.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_2d_arrays/test_subscript_2d_arrays.mdl\nModel file name is ./testModels/tests/subscript_2d_arrays/test_subscript_2d_arrays.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _1, 2; 3, 4; 5, 6;_>  <-- *** We were here. ***\n<Node matching _1, 2; 3, 4; 5, 6;_>\n<Node matching _1, _>\n<RegexNode called _number_ matching _1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2; _>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _3, _>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _4; _>\n<RegexNode called _number_ matching _4_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _5, _>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _6;_>\n<RegexNode called _number_ matching _6_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_3d_arrays/test_subscript_3d_arrays.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_3d_arrays/test_subscript_3d_arrays.mdl\nModel file name is ./testModels/tests/subscript_3d_arrays/test_subscript_3d_arrays.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _1, 2; 3, 4; 5, 6;_>  <-- *** We were here. ***\n<Node matching _1, 2; 3, 4; 5, 6;_>\n<Node matching _1, _>\n<RegexNode called _number_ matching _1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2; _>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _3, _>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _4; _>\n<RegexNode called _number_ matching _4_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _5, _>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _6;_>\n<RegexNode called _number_ matching _6_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_3d_arrays_lengthwise/test_subscript_3d_arrays_lengthwise.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_3d_arrays_lengthwise/test_subscript_3d_arrays_lengthwise.mdl\nModel file name is ./testModels/tests/subscript_3d_arrays_lengthwise/test_subscript_3d_arrays_lengthwise.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _0.01, 0.02; 0.03, 0.04; 0.05, 0.06;_>  <-- *** We were here. ***\n<Node matching _0.01, 0.02; 0.03, 0.04; 0.05, 0.06;_>\n<Node matching _0.01, _>\n<RegexNode called _number_ matching _0.01_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.02; _>\n<RegexNode called _number_ matching _0.02_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.03, _>\n<RegexNode called _number_ matching _0.03_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.04; _>\n<RegexNode called _number_ matching _0.04_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.05, _>\n<RegexNode called _number_ matching _0.05_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.06;_>\n<RegexNode called _number_ matching _0.06_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_3d_arrays_widthwise/test_subscript_3d_arrays_widthwise.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_3d_arrays_widthwise/test_subscript_3d_arrays_widthwise.mdl\nModel file name is ./testModels/tests/subscript_3d_arrays_widthwise/test_subscript_3d_arrays_widthwise.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _0.01, 0.02; 0.03, 0.04;_>  <-- *** We were here. ***\n<Node matching _0.01, 0.02; 0.03, 0.04;_>\n<Node matching _0.01, _>\n<RegexNode called _number_ matching _0.01_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.02; _>\n<RegexNode called _number_ matching _0.02_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.03, _>\n<RegexNode called _number_ matching _0.03_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.04;_>\n<RegexNode called _number_ matching _0.04_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_aggregation/test_subscript_aggregation.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_aggregation/test_subscript_aggregation.mdl\nModel file name is ./testModels/tests/subscript_aggregation/test_subscript_aggregation.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 757, in parse_general_expression\ntree = parser.parse(element['expr'])\nFile _/usr/lib/python3.4/site-packages/parsimonious/grammar.py_, line 115, in parse\nreturn self.default_rule.parse(text, pos=pos)\nFile _/usr/lib/python3.4/site-packages/parsimonious/expressions.py_, line 122, in parse\nraise IncompleteParseError(text, node.end, self)\nparsimonious.exceptions.IncompleteParseError: Rule 'expr_type' matched in its entirety, but it didn't consume all the text. The non-matching portion of the text begins with '(Stock A[One Dimensi' (line 1, column 4).",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_constant_call/test_subscript_constant_call.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_constant_call/test_subscript_constant_call.mdl\nModel file name is ./testModels/tests/subscript_constant_call/test_subscript_constant_call.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _5,5,5_>  <-- *** We were here. ***\n<Node matching _5,5,5_>\n<Node matching _5,_>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching __>\n<Node matching _5,_>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching __>\n<Node matching _5_>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_docs/subscript_docs.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_docs/subscript_docs.mdl\nModel file name is ./testModels/tests/subscript_docs/subscript_docs.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _11, 12, 13; 21, 22, 23;_>  <-- *** We were here. ***\n<Node matching _11, 12, 13; 21, 22, 23;_>\n<Node matching _11, _>\n<RegexNode called _number_ matching _11_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _12, _>\n<RegexNode called _number_ matching _12_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _13; _>\n<RegexNode called _number_ matching _13_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _21, _>\n<RegexNode called _number_ matching _21_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _22, _>\n<RegexNode called _number_ matching _22_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _23;_>\n<RegexNode called _number_ matching _23_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_individually_defined_1_of_2d_arrays/subscript_individually_defined_1_of_2d_arrays.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_individually_defined_1_of_2d_arrays/subscript_individually_defined_1_of_2d_arrays.mdl\nModel file name is ./testModels/tests/subscript_individually_defined_1_of_2d_arrays/subscript_individually_defined_1_of_2d_arrays.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _1, 2; 3, 4; 5, 6;_>  <-- *** We were here. ***\n<Node matching _1, 2; 3, 4; 5, 6;_>\n<Node matching _1, _>\n<RegexNode called _number_ matching _1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2; _>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _3, _>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _4; _>\n<RegexNode called _number_ matching _4_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _5, _>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _6;_>\n<RegexNode called _number_ matching _6_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_individually_defined_1_of_2d_arrays_from_floats/subscript_individually_defined_1_of_2d_arrays_from_floats.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_individually_defined_1_of_2d_arrays_from_floats/subscript_individually_defined_1_of_2d_arrays_from_floats.mdl\nModel file name is ./testModels/tests/subscript_individually_defined_1_of_2d_arrays_from_floats/subscript_individually_defined_1_of_2d_arrays_from_floats.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _1, 2; 3, 4; 5, 6;_>  <-- *** We were here. ***\n<Node matching _1, 2; 3, 4; 5, 6;_>\n<Node matching _1, _>\n<RegexNode called _number_ matching _1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2; _>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _3, _>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _4; _>\n<RegexNode called _number_ matching _4_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _5, _>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _6;_>\n<RegexNode called _number_ matching _6_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_individually_defined_1d_arrays/subscript_individually_defined_1d_arrays.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_individually_defined_1d_arrays/subscript_individually_defined_1d_arrays.mdl\nModel file name is ./testModels/tests/subscript_individually_defined_1d_arrays/subscript_individually_defined_1d_arrays.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _0.01_>  <-- *** We were here. ***\n<Node matching _0.01_>\n<Node matching _0.01_>\n<RegexNode called _number_ matching _0.01_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_individually_defined_stocks/test_subscript_individually_defined_stocks.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_individually_defined_stocks/test_subscript_individually_defined_stocks.mdl\nModel file name is ./testModels/tests/subscript_individually_defined_stocks/test_subscript_individually_defined_stocks.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _1, 2; 3, 4; 5, 6;_>  <-- *** We were here. ***\n<Node matching _1, 2; 3, 4; 5, 6;_>\n<Node matching _1, _>\n<RegexNode called _number_ matching _1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2; _>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _3, _>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _4; _>\n<RegexNode called _number_ matching _4_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _5, _>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _6;_>\n<RegexNode called _number_ matching _6_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_mixed_assembly/test_subscript_mixed_assembly.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_mixed_assembly/test_subscript_mixed_assembly.mdl\nModel file name is ./testModels/tests/subscript_mixed_assembly/test_subscript_mixed_assembly.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _2.1, 2.2, 2.3_>  <-- *** We were here. ***\n<Node matching _2.1, 2.2, 2.3_>\n<Node matching _2.1, _>\n<RegexNode called _number_ matching _2.1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2.2, _>\n<RegexNode called _number_ matching _2.2_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2.3_>\n<RegexNode called _number_ matching _2.3_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_multiples/test_multiple_subscripts.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_multiples/test_multiple_subscripts.mdl\nModel file name is ./testModels/tests/subscript_multiples/test_multiple_subscripts.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _1,2,3,4_>  <-- *** We were here. ***\n<Node matching _1,2,3,4_>\n<Node matching _1,_>\n<RegexNode called _number_ matching _1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching __>\n<Node matching _2,_>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching __>\n<Node matching _3,_>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching __>\n<Node matching _4_>\n<RegexNode called _number_ matching _4_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_selection/subscript_selection.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_selection/subscript_selection.mdl\nModel file name is ./testModels/tests/subscript_selection/subscript_selection.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _1, 2; 3, 4; 5, 6;_>  <-- *** We were here. ***\n<Node matching _1, 2; 3, 4; 5, 6;_>\n<Node matching _1, _>\n<RegexNode called _number_ matching _1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2; _>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _3, _>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _4; _>\n<RegexNode called _number_ matching _4_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching _ _>\n<Node matching _5, _>\n<RegexNode called _number_ matching _5_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _6;_>\n<RegexNode called _number_ matching _6_>\n<RegexNode called ___ matching __>\n<Node matching _;_>\n<Node matching _;_>\n<Node matching _;_>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_subranges/test_subscript_subrange.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_subranges/test_subscript_subrange.mdl\nModel file name is ./testModels/tests/subscript_subranges/test_subscript_subrange.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _0.01, 0.02, 0.03_>  <-- *** We were here. ***\n<Node matching _0.01, 0.02, 0.03_>\n<Node matching _0.01, _>\n<RegexNode called _number_ matching _0.01_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.02, _>\n<RegexNode called _number_ matching _0.02_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.03_>\n<RegexNode called _number_ matching _0.03_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_subranges_equal/test_subscript_subrange_equal.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_subranges_equal/test_subscript_subrange_equal.mdl\nModel file name is ./testModels/tests/subscript_subranges_equal/test_subscript_subrange_equal.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _0.01, 0.02, 0.03_>  <-- *** We were here. ***\n<Node matching _0.01, 0.02, 0.03_>\n<Node matching _0.01, _>\n<RegexNode called _number_ matching _0.01_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.02, _>\n<RegexNode called _number_ matching _0.02_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _0.03_>\n<RegexNode called _number_ matching _0.03_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_switching/subscript_switching.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_switching/subscript_switching.mdl\nModel file name is ./testModels/tests/subscript_switching/subscript_switching.mdl\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 757, in parse_general_expression\ntree = parser.parse(element['expr'])\nFile _/usr/lib/python3.4/site-packages/parsimonious/grammar.py_, line 115, in parse\nreturn self.default_rule.parse(text, pos=pos)\nFile _/usr/lib/python3.4/site-packages/parsimonious/expressions.py_, line 122, in parse\nraise IncompleteParseError(text, node.end, self)\nparsimonious.exceptions.IncompleteParseError: Rule 'expr_type' matched in its entirety, but it didn't consume all the text. The non-matching portion of the text begins with '(Transition Matrix[C' (line 1, column 11).",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscript_updimensioning/test_subscript_updimensioning.mdl",
+            "log": "\nCommand is ./testModels/tests/subscript_updimensioning/test_subscript_updimensioning.mdl\nModel file name is ./testModels/tests/subscript_updimensioning/test_subscript_updimensioning.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _1, 2, 3_>  <-- *** We were here. ***\n<Node matching _1, 2, 3_>\n<Node matching _1, _>\n<RegexNode called _number_ matching _1_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2, _>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _3_>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscripted_delays/test_subscripted_delays.mdl",
+            "log": "\nCommand is ./testModels/tests/subscripted_delays/test_subscripted_delays.mdl\nModel file name is ./testModels/tests/subscripted_delays/test_subscripted_delays.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _10, 3, 2, 4_>  <-- *** We were here. ***\n<Node matching _10, 3, 2, 4_>\n<Node matching _10, _>\n<RegexNode called _number_ matching _10_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _3, _>\n<RegexNode called _number_ matching _3_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _2, _>\n<RegexNode called _number_ matching _2_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching _ _>\n<Node matching _4_>\n<RegexNode called _number_ matching _4_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "failed",
+            "modelPath": "./testModels/tests/subscripted_flows/test_subscripted_flows.mdl",
+            "log": "\nCommand is ./testModels/tests/subscripted_flows/test_subscripted_flows.mdl\nModel file name is ./testModels/tests/subscripted_flows/test_subscripted_flows.mdl\nTraceback (most recent call last):\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nTypeError: unorderable types: int() > str()\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\nFile _./PySDHelper.py_, line 25, in <module>\nmodel = pysd.read_vensim(modelName)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/pysd.py_, line 46, in read_vensim\npy_model_file = translate_vensim(mdl_file)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 904, in translate_vensim\ntranslate_section(section, macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 847, in translate_section\nmacro_list=macro_list)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 758, in parse_general_expression\nparse_object = ExpressionParser(tree)\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 641, in __init__\nself.visit(ast)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in <listcomp>\nreturn method(node, [self.visit(n) for n in node])\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 227, in visit\nreraise(VisitationError, VisitationError(exc, exc_class, node), tb)\nFile _/usr/lib/python3.4/site-packages/six.py_, line 692, in reraise\nraise value.with_traceback(tb)\nFile _/usr/lib/python3.4/site-packages/parsimonious/nodes.py_, line 217, in visit\nreturn method(node, [self.visit(n) for n in node])\nFile _/extra/volume0/jenkins/nodeHome/workspace/sdCloud_toolsCertificationPipeLine/build/pysd/py_backend/vensim/vensim2py.py_, line 695, in visit_array\ndatastr = np.array2string(data, separator=',').replace('n', '').replace(' ', '')\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 668, in array2string\nreturn _array2string(a, options, separator, prefix)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 460, in wrapper\nreturn f(self, *args, **kwargs)\nFile _/usr/lib64/python3.4/site-packages/numpy/core/arrayprint.py_, line 479, in _array2string\nif a.size > options['threshold']:\nparsimonious.exceptions.VisitationError: TypeError: unorderable types: int() > str()\n\nParse tree:\n<Node called _array_ matching _0.02,0.04,0.06_>  <-- *** We were here. ***\n<Node matching _0.02,0.04,0.06_>\n<Node matching _0.02,_>\n<RegexNode called _number_ matching _0.02_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching __>\n<Node matching _0.04,_>\n<RegexNode called _number_ matching _0.04_>\n<RegexNode called ___ matching __>\n<Node matching _,_>\n<Node matching _,_>\n<Node matching _,_>\n<RegexNode called ___ matching __>\n<Node matching _0.06_>\n<RegexNode called _number_ matching _0.06_>\n<RegexNode called ___ matching __>\n<Node matching __>\n<RegexNode called ___ matching __>\n<Node matching __>",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 0,
+            "codeExecutionTime": 0 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/time/test_time.mdl",
+            "log": "\nCommand is ./testModels/tests/time/test_time.mdl\nModel file name is ./testModels/tests/time/test_time.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1125,
+            "codeExecutionTime": 1200 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/trend/test_trend.mdl",
+            "log": "\nCommand is ./testModels/tests/trend/test_trend.mdl\nModel file name is ./testModels/tests/trend/test_trend.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1156,
+            "codeExecutionTime": 1119 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/trig/test_trig.mdl",
+            "log": "\nCommand is ./testModels/tests/trig/test_trig.mdl\nModel file name is ./testModels/tests/trig/test_trig.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1306,
+            "codeExecutionTime": 1336 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/unicode_characters/unicode_test_model.mdl",
+            "log": "\nCommand is ./testModels/tests/unicode_characters/unicode_test_model.mdl\nModel file name is ./testModels/tests/unicode_characters/unicode_test_model.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1001,
+            "codeExecutionTime": 1075 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/variable_ranges/test_variable_ranges.mdl",
+            "log": "\nCommand is ./testModels/tests/variable_ranges/test_variable_ranges.mdl\nModel file name is ./testModels/tests/variable_ranges/test_variable_ranges.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1522,
+            "codeExecutionTime": 1540 
+        }
+,
+        {
+            "result": "success",
+            "modelPath": "./testModels/tests/xidz_zidz/xidz_zidz.mdl",
+            "log": "\nCommand is ./testModels/tests/xidz_zidz/xidz_zidz.mdl\nModel file name is ./testModels/tests/xidz_zidz/xidz_zidz.mdl",
+            "codeGenerationTime": 0,
+            "codeCompilationTime": 1105,
+            "codeExecutionTime": 1239 
+        }
+    ]
+,
+    "summary":     {
+        "totalExecutionTime": 176791,
+        "totlaModelsCount": 85,
+        "succeededModelsCount": 53,
+        "failedModelsCount": 32 
+    }
+}

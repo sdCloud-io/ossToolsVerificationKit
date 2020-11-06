@@ -1,0 +1,118 @@
+.center-col {
+    float: none;
+    margin: auto;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.no-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table, th, td {
+    border: 1px solid #3F88C5;
+    overflow: auto;
+}
+
+.item-header {
+    color: #3F88C5;
+    font-family: 'Open sans', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-header-black {
+    color: black;
+    font-family: 'Open sans', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.display-block {
+    display: block;
+    position: sticky;
+}
+
+.padding-right-15 {
+    padding-right: 15px;
+}
+
+.padding-top-15 {
+    padding-top: 15px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+
+.log-style {
+    padding-top: 10px;
+    overflow: auto;
+}
+
+.btn-log{
+	color: #fff;
+    background-color: #3F88C5;
+    border-color: #46b8da;
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tab-text {
+    font-size: 18px !important;
+}
+
+.true::before {
+    color: #009B5C;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    content: "\f52c";
+}
+
+.false-star::before {
+    color: #F04E5B;
+    font-size: 18px;
+    content: "*";
+}
+
+.false::before {
+    color: #F04E5B;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    content: "\f53e";
+}
+
+.success::before {
+    color: #009B5C;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    content: "\f00c";
+}
+
+.failed::before {
+    color: #F04E5B;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    content: "\f00d";
+}
+
+
+.normal-text {
+    color: black;
+    font-family: 'Open sans', serif;
+    font-weight: normal;
+    font-size: 16px;
+}

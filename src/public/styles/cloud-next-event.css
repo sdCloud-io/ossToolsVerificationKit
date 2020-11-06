@@ -1,0 +1,225 @@
+#next-event {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    min-width: 400px;
+    height: 300px;
+    padding-top: 30px;
+}
+
+#next-event-section-title {
+    text-align: center;
+    font-family: 'Open sans', serif;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+#next-event-container {
+    font-family: 'Open sans', serif;
+    color: white;
+    background-image: url('../images/banner_russia.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    height: 216px;
+    border-radius: 7px;
+}
+
+#next-event-content-holder {
+    display: table;
+    width: 80%;
+    height: 100%;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#next-event-content-logo-and-dates {
+    display: table-cell;
+    width: 180px;
+    vertical-align: middle;
+}
+
+#next-event-content-logo {
+    display: block;
+    width: 180px;
+    height: 70px;
+    background-image: url('../images/conf-logo-secr.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+#next-event-content-date-line {
+    font-family: 'Open Sans', serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+#next-event-content-location-line {
+    font-family: 'Open Sans', serif;
+    font-weight: bold;
+    font-size: 10px;
+    color: white;
+    text-align: center;
+}
+
+#next-event-content-puff {
+    display: table-cell;
+    width: 150px;
+    height: 75px;
+}
+
+#next-event-content-text {
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+#next-event-title {
+    font-family: 'Open Sans', serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#next-event-memo {
+    font-family: 'Open sans', serif;
+    min-width: 350px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 18;
+    text-align: center;
+}
+
+@media only screen and (max-width: 760px) {
+    #next-event {
+        height: auto;
+        min-height: 300px;
+    }
+    
+    #next-event-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 310px;
+        height: auto;
+
+        padding-top: 35px;
+        padding-bottom: 35px;
+
+        background-position: top left;
+        background-size: 75% auto;
+        background-position: top left;
+        background-size: cover;
+        background-image: url('../images/banner_russia_mobile.png');
+        background-color: #4D91CA;
+    }
+
+    #next-event-content-holder {
+        width: 310px;
+        height: auto;
+    }
+
+    #next-event-content-logo-and-dates {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #next-event-content-text {
+        display: block;
+        width: 300px;
+    }
+
+    #next-event-title {
+        margin-top: 10px;
+    }
+
+    #next-event-memo {
+        min-width: 260px;
+        margin-bottom: 10px;
+    }
+
+    #next-event-content-puff {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+    #next-event {
+        height: auto;
+        min-height: 300px;
+        width: 80%;
+    }
+    
+    #next-event-container {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 90%;
+        max-width: 660px;
+        padding-top: 55px;
+        padding-bottom: 55px;
+        background-position: top left;
+        background-size: 75% auto;
+        background-image: url('../images/banner_russia_mobile.png');
+        background-color: #4D91CA;
+        border-radius: 20px;
+    }
+
+    #next-event-content-holder {
+        width: 80%;
+        height: auto;
+    }
+
+    #next-event-content-logo {
+        width: 200px;
+    }
+
+    #next-event-content-logo-and-dates {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 200px;
+    }
+
+    #next-event-content-date-line {
+        font-size: 20px;
+    }
+    
+    #next-event-content-location-line {
+        font-size: 20px;
+    }
+
+    #next-event-content-text {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+
+    #next-event-title {
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    #next-event-memo {
+        min-width: 260px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    #next-event-content-puff {
+        display: none;
+    }
+}

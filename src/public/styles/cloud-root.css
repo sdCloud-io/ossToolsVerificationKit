@@ -1,0 +1,46 @@
+body {
+    margin:0px;
+    background-color: white;
+}
+
+#project-license {
+    display: block;
+    width: 200px;
+    height: 99px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../images/gpl-v3-logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact-us-holder {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 8px;
+    background-color: #3F88C5;
+    text-decoration: none;
+}
+
+#contact-us-holder .fa-envelope {
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.contact-us-message {
+    font-family: 'Open sans', serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 5px;
+}
+
+#contact-us-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 155px
+}

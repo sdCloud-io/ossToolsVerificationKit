@@ -1,0 +1,170 @@
+.partnerships{
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+    min-width: 400px;
+}
+
+.partnerships-title {
+    text-align: center;
+    font-family: 'Open sans', serif;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#projects-university-logo{
+	float: left;
+    background-image: url('../images/itmo-logo-small.png');
+    background-size: contain;
+	 background-repeat: no-repeat;
+    width: 200px;
+    height: 140px;
+}
+
+
+#projects-thapar-logo-2{
+    margin: auto;
+    background-image: url('../images/thapar-logo.png');
+    background-size: contain;
+	background-repeat: no-repeat;
+    width: 200px;
+    height: 140px;
+}
+
+#projects-thapar-logo-info{
+    background-image: url('../images/thapar-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 140px;
+}
+
+.partner-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    min-width: 400px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    border: 2px solid #3F88C5;
+    padding: 20px;
+}
+
+.partner-card:hover { border: 2px solid #81aff9; }
+
+.card-title {
+    font-family: 'Open sans', serif;
+    font-weight: bold;
+    float: left;
+    font-size: 28px;
+}
+
+.card-description {
+    padding-top: 15px;
+    float: left;
+    font-family: 'Open sans', serif;
+    font-size: 20px;
+}
+
+.web-link {
+    float: left;
+    font-family: 'Open sans', serif;
+    font-size: 20px;
+	}
+
+.left-menu {
+    list-style-type: none;
+    margin: 0;
+    float: right;
+    padding: 0;
+    background-color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.left-menu-item a {
+    display: block;
+    text-align: center;
+    padding: 10px 16px 10px 16px;
+    font-family: 'Open Sans', serif;
+    font-size: 16px;
+    color: #4087C5;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.left-menu-item a:hover {
+    background-color: #C9DEEF;
+}
+
+.left-menu-item-selected {
+    background-color: #C9DEEF;
+    border-radius: 15px;
+}
+
+.center-logo {
+    padding-top: 20px; 
+    margin: auto;
+}
+.project-info {
+    margin: auto;
+}
+
+.activity-counters {
+    color: #3F88C5;
+}
+
+.blue-icon {
+    color: #3F88C5;
+    margin-right: 5px;
+}
+
+.padding-right-15 {
+    padding-right: 15px;
+}
+
+.publication-header {
+    margin-bottom: 15px;
+}
+
+.publication-description {
+    margin-bottom: 30px;
+}
+
+.center-title {
+    text-align: center;
+    font-family: 'Open sans', serif;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.member-name {
+    font-family: 'Open sans', serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.team-member-description {
+
+}
+
+.member-about {
+    font-family: 'Open sans', serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.team-member {
+    margin-bottom: 40px;
+}
+
+.team-avatar {
+    border: 2px solid #3F88C5;
+    border-radius: 50%;
+}

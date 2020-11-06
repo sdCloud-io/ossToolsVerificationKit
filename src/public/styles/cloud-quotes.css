@@ -1,0 +1,63 @@
+#quotes {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 600px;
+    min-width: 300px;
+    min-height: 75px;
+    width: 60%;
+    display: table;
+    table-layout: fixed;
+}
+
+#quotes-left-quote {
+    display: table-cell;
+    width: 40px;
+    min-height: 74px;
+    height: 100%;
+    background-image: url('../images/cloud-left-quote.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+#quotes-right-quote {
+    display: table-cell;
+    width: 40px;
+    min-height: 74px;
+    height: 100%;
+    background-image: url('../images/cloud-right-quote.png');
+    background-position: right 0px bottom 70px;
+    background-repeat: no-repeat;
+}
+
+#quotes-content {
+    display: table-cell;
+    font-family: 'Open Sans', serif;
+    padding: 30px;
+}
+
+.quote {
+    display: block;
+}
+
+.quote-author {
+    
+    text-align: right;
+    padding-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 760px) {
+    #quotes {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-device-width: 760px) {
+    #quotes {
+        width: 90%;
+        max-width: 1000px;
+        font-size: 30px;
+    }
+}
