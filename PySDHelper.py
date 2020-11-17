@@ -10,7 +10,7 @@ def print_full(x, resultsModelName):
     print(x, file=open(resultsModelName + '.result', 'w'))
     pandas.reset_option('display.max_rows')
 
-numpy.set_printoptions(threshold='nan')
+numpy.set_printoptions(threshold=sys.maxsize)
 
 if len(sys.argv) != 3:
     print("Error: wrong number of arguments. Expected 2 but got " + str(len(sys.argv) - 1))
