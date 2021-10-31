@@ -1,0 +1,22 @@
+﻿{
+  "Models": [
+    {
+      "Name": "test-models",
+      "RepositoryUrl": "https://github.com/SDXorg/test-models",
+      "Path": "testModels"
+    }
+  ],
+  "Instruments": [
+    {
+      "Name": "SDE",
+      "RepositoryUrl": "https://github.com/climateinteractive/SDEverywhere",
+      "Path": "sdeverywhere"
+    },
+    {
+      "Name": "PySD",
+      "RepositoryUrl": "https://github.com/JamesPHoughton/pysd",
+      "Path": "pysd_repo"
+    }
+  ],
+  "BuildDir": "build"
+}
