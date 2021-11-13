@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Microsoft.Extensions.Logging;
 using ReportEngine.filesystem.interfaces;
 using ReportEngine.models;
 using ReportEngine.network.interfaces;
 using ReportEngine.services.interfaces;
-using ReportEngine.strategies;
 using ReportEngine.strategies.interfaces;
 
 namespace ReportEngine.services
@@ -33,6 +33,9 @@ namespace ReportEngine.services
 
         public void GenerateReport()
         {
+            var timer = new Stopwatch();
+            timer.Start();
+            var report = new Report();
             _logger.LogInformation("Script initial variables:");
             Configuration = _fileSystemWorker.ReadFromJsonFile<Configuration>(ConfigPath);
 
@@ -46,27 +49,36 @@ namespace ReportEngine.services
 
             var strategies = _strategyProvider.GetAllStrategies();
 
-
             var scripts = _fileSystemWorker.ReadFromJsonFile<List<Script>>(ScriptsPath);
 
-            var report = ExecuteScripts(scripts, strategies);
+            ExecuteScripts(scripts, strategies, report);
+            report.SummaryReport.TotalExecutionTime = timer.ElapsedMilliseconds;
             _fileSystemWorker.WriteJsonInFile(report, ReportPath);
         }
 
-        private Report ExecuteScripts(List<Script> scripts, List<IInstrumentStrategy> strategies)
+        private Report ExecuteScripts(List<Script> scripts, List<IInstrumentStrategy> strategies, Report report)
         {
-            var report = new Report();
             foreach (var script in scripts)
             {
                 var scriptResult = new ScriptResult();
                 var strategy = strategies.FirstOrDefault(strategy => strategy.GetName() == script.InstrumentName);
-                scriptResult.ScriptName = strategy.GetName();
+                if (strategy == null) continue;
+                scriptResult.ScriptName = script.Name;
 
                 foreach (var modelPath in _fileSystemWorker.GetFilePathsByExtensions(script.ModelPaths,
                     script.ExtModels))
                 {
-                    var fixedModelPath = modelPath.Replace("\\", "/");
-                    scriptResult.Results.Add(strategy.ValidateModel(fixedModelPath, script.PathResult));
+                    report.SummaryReport.TotalModelsCount++;
+                    var validationModelResult = strategy.ValidateModel(modelPath, script.PathResult);
+                    scriptResult.Results.Add(validationModelResult);
+                    if (validationModelResult.Result == Constants.Success)
+                    {
+                        report.SummaryReport.SucceededModelsCount++;
+                    }
+                    else
+                    {
+                        report.SummaryReport.FailedModelsCount++;
+                    }
                 }
 
                 report.ScriptResults.Add(scriptResult);

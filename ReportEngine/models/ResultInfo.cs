@@ -2,7 +2,7 @@
 {
     public class ResultInfo
     {
-        public string Result { get; set; }
+        public string Result { get; set; } = Constants.Failed;
         public string ModelPath { get; set; }
         public string Log { get; set; }
         public long CodeGenerationTime { get; set; }

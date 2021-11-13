@@ -1,6 +1,7 @@
 ﻿using System.IO;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO.Compression;
 using System.Text.Json;
 using ReportEngine.filesystem.interfaces;
@@ -52,9 +53,20 @@ namespace ReportEngine.filesystem
             return Directory.GetCurrentDirectory();
         }
 
-        public void MoveDirectory(string source, string destination)
+        public void CreateSymbolicLinkDirectory(string source, string destination)
         {
-            Directory.Move(source, destination);
+            var sdeInitProcess = new Process
+            {
+                StartInfo = new ProcessStartInfo("ln")
+                {
+                    RedirectStandardOutput = false,
+                    RedirectStandardError = false,
+                    Arguments = $"-s {source} {destination}",
+                    UseShellExecute = true,
+                }
+            };
+            sdeInitProcess.Start();
+            sdeInitProcess.WaitForExit();
         }
 
         public void CopyFile(string filePathSource, string filePathDestination)
@@ -64,6 +76,7 @@ namespace ReportEngine.filesystem
 
         public void SetPermissionExecute(string filePath)
         {
+            Process.Start("chmod", $"+x {filePath}");
         }
 
         public void WriteJsonInFile<T>(T t, string filePath)

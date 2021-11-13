@@ -17,42 +17,60 @@ namespace ReportEngine.strategies
         {
             _logger = logger;
             _fileSystemWorker = fileSystemWorker;
-
         }
 
         public void Init(string path)
         {
             _logger.LogInformation($"Preparing {GetName()} for tests");
-            _fileSystemWorker.MoveDirectory(path + "/pysd", "./pysd");
-            _pySdCmd = "./PySDHelper.py";
+            _fileSystemWorker.CreateSymbolicLinkDirectory(path + "/pysd", "./pysd");
+            _pySdCmd = "PySDHelper.py";
             _fileSystemWorker.CopyFile("../PySDHelper.py", _pySdCmd);
             _fileSystemWorker.SetPermissionExecute(_pySdCmd);
         }
 
-        public ResultInfo ValidateModel(string path, string modelPath)
+        public ResultInfo ValidateModel(string modelPath, string modelPathResult)
         {
-            _logger.LogInformation($"Running model with {GetName()}");
-            _logger.LogInformation($"Model paht: {path}");
-
             var timer = new Stopwatch();
-            var modelProcessingStart = timer.ElapsedMilliseconds;
+            timer.Start();
+
+            var resultInfo = new ResultInfo { ModelPath = modelPath };
+            _logger.LogInformation($"Running model with {GetName()}");
+            _logger.LogInformation($"Model path: {modelPath}");
 
             _logger.LogInformation("Generating model code...");
+
             _logger.LogInformation("Compiling model code");
+            var result = ExecuteCommand("compile", resultInfo, out long complieExecutionTime, modelPath);
+            resultInfo.CodeCompilationTime = complieExecutionTime;
+            if (!result) return resultInfo;
 
-            var modelType = modelPath.Contains(".xmile") ? "compileXmile" : "compileMdl";
+            _logger.LogInformation("Running compiled model");
+            result = ExecuteCommand("compileAndRun", resultInfo, out long compileAndRunExecutionTime, modelPath);
+            resultInfo.CodeExecutionTime = compileAndRunExecutionTime;
+            if (!result) return resultInfo;
 
-            var modelGeneratedCodeCompilationStart = timer.ElapsedMilliseconds;
+            var timeDelta = timer.ElapsedMilliseconds;
+            _logger.LogInformation("========================================================");
+            _logger.LogInformation($" Total model processing time with PySD was {timeDelta} ms");
+            _logger.LogInformation("========================================================");
 
-            var info = new ProcessStartInfo(_pySdCmd)
-            {
-                RedirectStandardOutput = false,
-                RedirectStandardError = false,
-                Arguments = $"{modelType} {modelPath} ",
-                UseShellExecute = true,
-            };
-            Process.Start(info);
-            return new ResultInfo();
+            resultInfo.Result = Constants.Success;
+            return resultInfo;
+        }
+
+        private bool ExecuteCommand(string command, ResultInfo resultInfo, out long executionTime, string modelPath)
+        {
+            var timer = new Stopwatch();
+            timer.Start();
+            var startTime = timer.ElapsedMilliseconds;
+            var modelType = modelPath.Contains(".xmile") ? "Xmile" : "Mdl";
+            var executionCommand = command + modelType;
+            var executionArguments = $"{_pySdCmd} {executionCommand} {modelPath}";
+            var executionProcessResult = ProcessHelper.ExecuteProcess("python3", executionArguments);
+            executionTime = timer.ElapsedMilliseconds - startTime;
+            resultInfo.Log = executionProcessResult.Error;
+            _logger.LogInformation($" - completed in {executionTime}");
+            return string.IsNullOrEmpty(executionProcessResult.Error);
         }
 
         public string GetName()
