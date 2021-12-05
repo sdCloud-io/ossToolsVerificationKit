@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.Extensions.Logging;
+using ReportEngine.filesystem.adapters;
 using ReportEngine.filesystem.interfaces;
 using ReportEngine.models;
 using ReportEngine.strategies.interfaces;
@@ -10,22 +11,24 @@ namespace ReportEngine.strategies
     {
         private const string NAME = "PySD";
         private readonly ILogger<PySDStrategy> _logger;
-        private readonly IFileSystemWorker _fileSystemWorker;
+        private readonly IFileSystemHelper _fileSystemHelper;
+        private readonly PySDFileAdapter _pySdFileAdapter;
         private string _pySdCmd;
 
-        public PySDStrategy(ILogger<PySDStrategy> logger, IFileSystemWorker fileSystemWorker)
+        public PySDStrategy(ILogger<PySDStrategy> logger, IFileSystemHelper fileSystemHelper, PySDFileAdapter pySdFileAdapter)
         {
             _logger = logger;
-            _fileSystemWorker = fileSystemWorker;
+            _fileSystemHelper = fileSystemHelper;
+            _pySdFileAdapter = pySdFileAdapter;
         }
 
         public void Init(string path)
         {
             _logger.LogInformation($"Preparing {GetName()} for tests");
-            _fileSystemWorker.CreateSymbolicLinkDirectory(path + "/pysd", "./pysd");
+            _fileSystemHelper.CreateSymbolicLinkDirectory(path + "/pysd", "./pysd");
             _pySdCmd = "PySDHelper.py";
-            _fileSystemWorker.CopyFile("../PySDHelper.py", _pySdCmd);
-            _fileSystemWorker.SetPermissionExecute(_pySdCmd);
+            _fileSystemHelper.CopyFile("../PySDHelper.py", _pySdCmd);
+            _fileSystemHelper.SetPermissionExecute(_pySdCmd);
         }
 
         public ResultInfo ValidateModel(string modelPath, string modelPathResult)
@@ -54,6 +57,7 @@ namespace ReportEngine.strategies
             _logger.LogInformation($" Total model processing time with PySD was {timeDelta} ms");
             _logger.LogInformation("========================================================");
 
+            resultInfo.ResultDictionary = _pySdFileAdapter.ReadValues(modelPath);
             resultInfo.Result = Constants.Success;
             return resultInfo;
         }

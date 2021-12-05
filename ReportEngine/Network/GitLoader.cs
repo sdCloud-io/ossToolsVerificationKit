@@ -12,12 +12,12 @@ namespace ReportEngine.network
     public class GitLoader : IGitLoader
     {
         private readonly ILogger<GitLoader> _logger;
-        private readonly IFileSystemWorker _fileSystemWorker;
+        private readonly IFileSystemHelper _fileSystemHelper;
 
-        public GitLoader(ILogger<GitLoader> logger, IFileSystemWorker fileSystemWorker)
+        public GitLoader(ILogger<GitLoader> logger, IFileSystemHelper fileSystemHelper)
         {
             _logger = logger;
-            _fileSystemWorker = fileSystemWorker;
+            _fileSystemHelper = fileSystemHelper;
         }
 
         public void DownloadRepository(string name, string sourceUrl, string path)
@@ -30,7 +30,7 @@ namespace ReportEngine.network
             var zipFileName = name + ".zip";
             webClient.DownloadFile(contentsUrl, zipFileName);
 
-            _fileSystemWorker.ExtractFile(zipFileName, path);
+            _fileSystemHelper.ExtractFile(zipFileName, path);
         }
     }
 }

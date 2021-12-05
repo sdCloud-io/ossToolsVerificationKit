@@ -1,7 +1,7 @@
 ﻿using System;
-using System.IO;
 using Microsoft.Extensions.DependencyInjection;
 using ReportEngine.filesystem;
+using ReportEngine.filesystem.adapters;
 using ReportEngine.filesystem.interfaces;
 using ReportEngine.network;
 using ReportEngine.network.interfaces;
@@ -21,7 +21,7 @@ namespace ReportEngine
             ConfigureServices(services);
             var serviceProvider = services.BuildServiceProvider();
             var reportService = serviceProvider.GetService<IReportService>();
-            reportService.GenerateReport();
+            reportService?.GenerateReport();
             Console.WriteLine("Ok");
         }
 
@@ -31,11 +31,14 @@ namespace ReportEngine
                     new LoggerConfiguration().WriteTo.Console().CreateLogger()
                 ))
                 .AddTransient<IReportService, ReportBuilder>()
-                .AddTransient<IFileSystemWorker, FileSystemWorker>()
+                .AddTransient<IFileSystemHelper, FileSystemHelper>()
                 .AddTransient<IStrategyProvider, StrategyProvider>()
                 .AddTransient<IInstrumentStrategy, SdeStrategy>()
                 .AddTransient<IInstrumentStrategy, PySDStrategy>()
-                .AddTransient<IGitLoader, GitLoader>();
+                .AddTransient<IGitLoader, GitLoader>()
+                .AddSingleton<SdeFileAdapter>()
+                .AddSingleton<PySDFileAdapter>()
+                .AddSingleton<PySDStrategy>();
         }
     }
 }

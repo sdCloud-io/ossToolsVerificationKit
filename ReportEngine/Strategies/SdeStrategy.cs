@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Linq;
 using Microsoft.Extensions.Logging;
+using ReportEngine.filesystem.adapters;
 using ReportEngine.filesystem.interfaces;
 using ReportEngine.models;
 using ReportEngine.services;
@@ -12,20 +13,23 @@ namespace ReportEngine.strategies
     {
         private const string NAME = "SDE";
         private readonly ILogger<SdeStrategy> _logger;
-        private readonly IFileSystemWorker _fileSystemWorker;
+        private readonly IFileSystemHelper _fileSystemHelper;
+        private readonly SdeFileAdapter _sdeFileAdapter;
         private string sdeCmd;
 
-        public SdeStrategy(ILogger<SdeStrategy> logger, IFileSystemWorker fileSystemWorker)
+        public SdeStrategy(ILogger<SdeStrategy> logger, IFileSystemHelper fileSystemHelper,
+            SdeFileAdapter sdeFileAdapter)
         {
             _logger = logger;
-            _fileSystemWorker = fileSystemWorker;
+            _fileSystemHelper = fileSystemHelper;
+            _sdeFileAdapter = sdeFileAdapter;
         }
 
         public void Init(string path)
         {
             _logger.LogInformation($"Building {GetName()} with npm:");
-            var currentDir = _fileSystemWorker.GetCurrentDirectory();
-            _fileSystemWorker.ChangeDirectory(path);
+            var currentDir = _fileSystemHelper.GetCurrentDirectory();
+            _fileSystemHelper.ChangeDirectory(path);
 
             var sdeInitProcess = new Process
             {
@@ -43,7 +47,7 @@ namespace ReportEngine.strategies
             _logger.LogInformation($"Finished building {GetName()} with npm:");
             sdeCmd =
                 $"./{ReportBuilder.Configuration.Instruments.FirstOrDefault(elem => elem.Name == NAME)?.Path}/src/sde.js";
-            _fileSystemWorker.ChangeDirectory(currentDir);
+            _fileSystemHelper.ChangeDirectory(currentDir);
         }
 
         public ResultInfo ValidateModel(string modelPath, string modelPathResult)
@@ -80,6 +84,7 @@ namespace ReportEngine.strategies
             _logger.LogInformation($" Total model processing time with SDEverywhere was {timeDelta} ms");
             _logger.LogInformation("========================================================");
 
+            resultInfo.ResultDictionary = _sdeFileAdapter.ReadValues(modelPath);
             resultInfo.Result = Constants.Success;
             return resultInfo;
         }

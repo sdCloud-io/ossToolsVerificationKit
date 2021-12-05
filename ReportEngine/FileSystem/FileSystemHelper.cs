@@ -1,15 +1,13 @@
 ﻿using System.IO;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO.Compression;
 using System.Text.Json;
 using ReportEngine.filesystem.interfaces;
-using ReportEngine.models;
 
 namespace ReportEngine.filesystem
 {
-    public class FileSystemWorker : IFileSystemWorker
+    public class FileSystemHelper : IFileSystemHelper
     {
         public T ReadFromJsonFile<T>(string filePath)
         {

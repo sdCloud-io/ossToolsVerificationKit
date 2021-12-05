@@ -3,7 +3,7 @@ using ReportEngine.models;
 
 namespace ReportEngine.filesystem.interfaces
 {
-    public interface IFileSystemWorker
+    public interface IFileSystemHelper
     {
         T ReadFromJsonFile<T>(string filePath);
         void DeleteDirectory(string dirPath);

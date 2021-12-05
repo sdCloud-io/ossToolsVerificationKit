@@ -10,6 +10,7 @@
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
       <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
       <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
       <PackageReference Include="Serilog.Extensions.Hosting" Version="4.1.2" />
       <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0" />
       <PackageReference Include="System.IO.FileSystem.AccessControl" Version="5.0.0" />
@@ -25,6 +26,10 @@
       <None Update="scripts.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Json" />
     </ItemGroup>
 
 </Project>

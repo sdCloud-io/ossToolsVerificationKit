@@ -18,5 +18,5 @@
       "Path": "pysd_repo"
     }
   ],
-  "BuildDir": "build"
+  "BuildDir": "./build"
 }

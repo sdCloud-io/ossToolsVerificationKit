@@ -1,4 +1,6 @@
-﻿namespace ReportEngine.models
+﻿using System.Collections.Generic;
+
+namespace ReportEngine.models
 {
     public class ResultInfo
     {
@@ -8,5 +10,6 @@
         public long CodeGenerationTime { get; set; }
         public long CodeCompilationTime { get; set; }
         public long CodeExecutionTime { get; set; }
+        public Dictionary<string, List<string>> ResultDictionary { get; set; }
     }
 }
