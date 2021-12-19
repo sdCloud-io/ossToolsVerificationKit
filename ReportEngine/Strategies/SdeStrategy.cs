@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Linq;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using ReportEngine.filesystem.adapters;
 using ReportEngine.filesystem.interfaces;
 using ReportEngine.models;
@@ -15,14 +16,16 @@ namespace ReportEngine.strategies
         private readonly ILogger<SdeStrategy> _logger;
         private readonly IFileSystemHelper _fileSystemHelper;
         private readonly SdeFileAdapter _sdeFileAdapter;
+        private readonly Configuration _configuration;
         private string sdeCmd;
 
         public SdeStrategy(ILogger<SdeStrategy> logger, IFileSystemHelper fileSystemHelper,
-            SdeFileAdapter sdeFileAdapter)
+            SdeFileAdapter sdeFileAdapter, IOptions<Configuration> configuration)
         {
             _logger = logger;
             _fileSystemHelper = fileSystemHelper;
             _sdeFileAdapter = sdeFileAdapter;
+            _configuration = configuration.Value;
         }
 
         public void Init(string path)
@@ -46,16 +49,16 @@ namespace ReportEngine.strategies
 
             _logger.LogInformation($"Finished building {GetName()} with npm:");
             sdeCmd =
-                $"./{ReportBuilder.Configuration.Instruments.FirstOrDefault(elem => elem.Name == NAME)?.Path}/src/sde.js";
+                $"./{_configuration.Instruments.FirstOrDefault(elem => elem.Name == NAME)?.Path}/src/sde.js";
             _fileSystemHelper.ChangeDirectory(currentDir);
         }
 
-        public ResultInfo ValidateModel(string modelPath, string modelPathResult)
+        public ModelInstrumentResult ValidateModel(string modelPath)
         {
             var timer = new Stopwatch();
             timer.Start();
 
-            var resultInfo = new ResultInfo { ModelPath = modelPath };
+            var resultInfo = new ModelInstrumentResult();
             _logger.LogInformation($"Running model with {GetName()}");
             _logger.LogInformation($"Model path: {modelPath}");
 
@@ -89,7 +92,8 @@ namespace ReportEngine.strategies
             return resultInfo;
         }
 
-        private bool ExecuteCommand(string command, ResultInfo resultInfo, out long executionTime, string modelPath)
+        private bool ExecuteCommand(string command, ModelInstrumentResult resultInfo, out long executionTime,
+            string modelPath)
         {
             var timer = new Stopwatch();
             timer.Start();

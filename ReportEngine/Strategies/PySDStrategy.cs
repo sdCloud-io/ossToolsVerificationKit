@@ -15,7 +15,8 @@ namespace ReportEngine.strategies
         private readonly PySDFileAdapter _pySdFileAdapter;
         private string _pySdCmd;
 
-        public PySDStrategy(ILogger<PySDStrategy> logger, IFileSystemHelper fileSystemHelper, PySDFileAdapter pySdFileAdapter)
+        public PySDStrategy(ILogger<PySDStrategy> logger, IFileSystemHelper fileSystemHelper,
+            PySDFileAdapter pySdFileAdapter)
         {
             _logger = logger;
             _fileSystemHelper = fileSystemHelper;
@@ -31,12 +32,12 @@ namespace ReportEngine.strategies
             _fileSystemHelper.SetPermissionExecute(_pySdCmd);
         }
 
-        public ResultInfo ValidateModel(string modelPath, string modelPathResult)
+        public ModelInstrumentResult ValidateModel(string modelPath)
         {
             var timer = new Stopwatch();
             timer.Start();
 
-            var resultInfo = new ResultInfo { ModelPath = modelPath };
+            var resultInfo = new ModelInstrumentResult();
             _logger.LogInformation($"Running model with {GetName()}");
             _logger.LogInformation($"Model path: {modelPath}");
 
@@ -62,7 +63,8 @@ namespace ReportEngine.strategies
             return resultInfo;
         }
 
-        private bool ExecuteCommand(string command, ResultInfo resultInfo, out long executionTime, string modelPath)
+        private bool ExecuteCommand(string command, ModelInstrumentResult resultInfo, out long executionTime,
+            string modelPath)
         {
             var timer = new Stopwatch();
             timer.Start();

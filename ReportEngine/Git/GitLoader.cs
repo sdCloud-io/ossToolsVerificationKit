@@ -1,13 +1,9 @@
-﻿using System.IO;
-using System.IO.Compression;
-using System.Net;
-using System.Net.Http;
-using LibGit2Sharp;
+﻿using System.Net;
 using Microsoft.Extensions.Logging;
 using ReportEngine.filesystem.interfaces;
 using ReportEngine.network.interfaces;
 
-namespace ReportEngine.network
+namespace ReportEngine.Git
 {
     public class GitLoader : IGitLoader
     {

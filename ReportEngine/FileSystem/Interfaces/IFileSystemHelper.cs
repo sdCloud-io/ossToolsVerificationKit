@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using ReportEngine.models;
 
 namespace ReportEngine.filesystem.interfaces
 {
@@ -15,6 +14,6 @@ namespace ReportEngine.filesystem.interfaces
         void CopyFile(string filePathSource, string filePathDestination);
         void SetPermissionExecute(string filePath);
         void WriteJsonInFile<T>(T t, string filePath);
-        List<string> GetFilePathsByExtensions(List<string> path, List<string> ext);
+        List<string> GetFilePathsByExtensions(string ext);
     }
 }

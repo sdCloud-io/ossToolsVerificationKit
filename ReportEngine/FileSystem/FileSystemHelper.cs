@@ -2,13 +2,23 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO.Compression;
+using System.Linq;
 using System.Text.Json;
+using Microsoft.Extensions.Options;
 using ReportEngine.filesystem.interfaces;
+using ReportEngine.models;
 
 namespace ReportEngine.filesystem
 {
     public class FileSystemHelper : IFileSystemHelper
     {
+        private readonly Configuration _configuration;
+
+        public FileSystemHelper(IOptions<Configuration> configuration)
+        {
+            _configuration = configuration.Value;
+        }
+
         public T ReadFromJsonFile<T>(string filePath)
         {
             using var jsonFile = new StreamReader(filePath);
@@ -83,15 +93,12 @@ namespace ReportEngine.filesystem
             File.WriteAllText(filePath, json);
         }
 
-        public List<string> GetFilePathsByExtensions(List<string> paths, List<string> exts)
+        public List<string> GetFilePathsByExtensions(string fileExts)
         {
             var result = new List<string>();
-            foreach (var path in paths)
+            foreach (var path in _configuration.Models.Select(model => model.Path))
             {
-                foreach (var ext in exts)
-                {
-                    result.AddRange(Directory.GetFiles(path, ext, SearchOption.AllDirectories));
-                }
+                result.AddRange(Directory.GetFiles(path, fileExts, SearchOption.AllDirectories));
             }
 
             return result;

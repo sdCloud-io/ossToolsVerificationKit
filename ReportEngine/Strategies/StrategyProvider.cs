@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using ReportEngine.services;
+using Microsoft.Extensions.Options;
+using ReportEngine.models;
 using ReportEngine.strategies.interfaces;
 
 namespace ReportEngine.strategies
@@ -8,22 +9,24 @@ namespace ReportEngine.strategies
     public class StrategyProvider : IStrategyProvider
     {
         private readonly IEnumerable<IInstrumentStrategy> _strategies;
+        private readonly Configuration _configuration;
 
-        public StrategyProvider(IEnumerable<IInstrumentStrategy> strategies)
+        public StrategyProvider(IEnumerable<IInstrumentStrategy> strategies, IOptions<Configuration> configuration)
         {
             _strategies = strategies;
+            _configuration = configuration.Value;
         }
 
         public List<IInstrumentStrategy> GetAllStrategies()
         {
             var strategyNames =
-                ReportBuilder.Configuration.Instruments.Select(instrument => instrument.Name);
+                _configuration.Instruments.Select(instrument => instrument.Name);
             var requestedStrategies =
                 _strategies.Where(strategy => strategyNames.Contains(strategy.GetName())).ToList();
 
             foreach (var strategy in requestedStrategies)
             {
-                var path = ReportBuilder.Configuration.Instruments.FirstOrDefault(i => i.Name == strategy.GetName())
+                var path = _configuration.Instruments.FirstOrDefault(i => i.Name == strategy.GetName())
                     ?.Path;
                 strategy.Init(path);
             }

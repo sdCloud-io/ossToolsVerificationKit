@@ -1,8 +1,12 @@
 ﻿using System;
+using System.IO;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ReportEngine.filesystem;
 using ReportEngine.filesystem.adapters;
 using ReportEngine.filesystem.interfaces;
+using ReportEngine.Git;
+using ReportEngine.models;
 using ReportEngine.network;
 using ReportEngine.network.interfaces;
 using ReportEngine.services;
@@ -15,6 +19,8 @@ namespace ReportEngine
 {
     class Startup
     {
+        public static IConfiguration configuration;
+
         static void Main(string[] args)
         {
             var services = new ServiceCollection();
@@ -27,6 +33,12 @@ namespace ReportEngine
 
         private static void ConfigureServices(IServiceCollection services)
         {
+            configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetParent(AppContext.BaseDirectory)?.FullName)
+                .AddJsonFile("appsettings.json", false)
+                .Build();
+
+
             services.AddLogging(opt => opt.AddSerilog(
                     new LoggerConfiguration().WriteTo.Console().CreateLogger()
                 ))
@@ -38,7 +50,9 @@ namespace ReportEngine
                 .AddTransient<IGitLoader, GitLoader>()
                 .AddSingleton<SdeFileAdapter>()
                 .AddSingleton<PySDFileAdapter>()
-                .AddSingleton<PySDStrategy>();
+                .AddSingleton<PySDStrategy>()
+                .AddSingleton(configuration)
+                .Configure<Configuration>(configuration);
         }
     }
 }

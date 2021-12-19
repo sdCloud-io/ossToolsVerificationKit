@@ -1,6 +1,6 @@
 ﻿namespace ReportEngine.models
 {
-    public class Instrument
+    public class InstrumentConfiguration
     {
         public string Name {get; set; }
         public string RepositoryUrl { get; set; }

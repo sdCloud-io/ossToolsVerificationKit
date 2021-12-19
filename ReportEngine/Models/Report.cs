@@ -7,7 +7,7 @@ namespace ReportEngine.models
     {
         public double StartTimeStamp { get; } = DateTime.Now.ToFileTime();
         public DateTime StartTime { get; } = DateTime.Now;
-        public List<ScriptResult> ScriptResults { get; set; } = new();
+        public List<ModelResult> ModelResults { get; set; } = new();
         public SummaryReport SummaryReport { get; set; } = new SummaryReport();
     }
 }

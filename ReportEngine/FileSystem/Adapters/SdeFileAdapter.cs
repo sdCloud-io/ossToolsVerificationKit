@@ -52,6 +52,7 @@ namespace ReportEngine.filesystem.adapters
                 }
             }
 
+            return new Dictionary<string, List<string>>();
             return readValues;
         }
     }

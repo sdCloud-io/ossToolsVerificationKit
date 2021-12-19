@@ -1,6 +1,6 @@
 ﻿namespace ReportEngine.models
 {
-    public class Model
+    public class ModelConfiguration
     {
         public string Name { get; set; }
         public string RepositoryUrl { get; set; }
