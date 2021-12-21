@@ -8,5 +8,6 @@ namespace ReportEngine.models
         public List<InstrumentConfiguration> Instruments { get; set; }
         public List<ScriptConfiguration> Scripts { get; set; }
         public string BuildDir { get; set; }
+        public string ReportFilePath { get; set; }
     }
 }

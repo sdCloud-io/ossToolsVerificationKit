@@ -13,7 +13,6 @@ namespace ReportEngine.services
 {
     public class ReportBuilder : IReportService
     {
-        private const string ReportPath = "testReport.json";
         private readonly ILogger<ReportBuilder> _logger;
         private readonly IFileSystemHelper _fileSystemHelper;
         private readonly IGitLoader _gitLoader;
@@ -27,7 +26,7 @@ namespace ReportEngine.services
             _fileSystemHelper = fileSystemHelper;
             _gitLoader = gitLoader;
             _configuration = configuration.Value;
-            
+
             _logger.LogInformation("Setting up build directory");
             _fileSystemHelper.DeleteDirectory(_configuration.BuildDir);
             _fileSystemHelper.CreateDirectory(_configuration.BuildDir);
@@ -35,7 +34,7 @@ namespace ReportEngine.services
 
             CheckOutTestModels();
             CheckOutInstruments();
-            
+
             _providedStrategies = strategyProvider.GetAllStrategies();
         }
 
@@ -47,7 +46,7 @@ namespace ReportEngine.services
 
             ExecuteScripts(_configuration.Scripts, report);
             report.SummaryReport.TotalExecutionTime = timer.ElapsedMilliseconds;
-            _fileSystemHelper.WriteJsonInFile(report, ReportPath);
+            _fileSystemHelper.WriteJsonInFile(report, _configuration.ReportFilePath);
         }
 
         private void ExecuteScripts(List<ScriptConfiguration> scripts,
@@ -78,6 +77,7 @@ namespace ReportEngine.services
                         modelResult.ModelInstrumentResults.Add(GetResultFromScript(modelPath, scriptName.Name,
                             scriptName.InstrumentName, report));
                     }
+
                     report.ModelResults.Add(modelResult);
                 }
             }

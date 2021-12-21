@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,8 +23,6 @@ namespace ReportEngine.filesystem.adapters
             var fileDictionary =
                 JsonConvert.DeserializeObject<Dictionary<string, Dictionary<string, string>>>(fileText);
 
-            return new Dictionary<string, List<string>>();
-            
             return fileDictionary?.ToDictionary(column => column.Key,
                 column => column.Value.Select(e => e.Value).ToList());
         }

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using ReportEngine.models;
 
 namespace ReportEngine.filesystem.interfaces
 {

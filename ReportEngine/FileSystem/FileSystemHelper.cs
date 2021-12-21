@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO.Compression;
 using System.Linq;
+using System.Text;
 using System.Text.Json;
 using Microsoft.Extensions.Options;
 using ReportEngine.filesystem.interfaces;
