@@ -32,9 +32,6 @@ namespace ReportEngine.services
             _fileSystemHelper.CreateDirectory(_configuration.BuildDir);
             _fileSystemHelper.ChangeDirectory(_configuration.BuildDir);
 
-            CheckOutTestModels();
-            CheckOutInstruments();
-
             _providedStrategies = strategyProvider.GetAllStrategies();
         }
 
@@ -102,22 +99,6 @@ namespace ReportEngine.services
 
             validationModelResult.ScriptName = name;
             return validationModelResult;
-        }
-
-        private void CheckOutInstruments()
-        {
-            foreach (var instrument in _configuration.Instruments)
-            {
-                _gitLoader.DownloadRepository(instrument.Name, instrument.RepositoryUrl, instrument.Path);
-            }
-        }
-
-        private void CheckOutTestModels()
-        {
-            foreach (var model in _configuration.Models)
-            {
-                _gitLoader.DownloadRepository(model.Name, model.RepositoryUrl, model.Path);
-            }
         }
     }
 }

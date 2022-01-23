@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO.Compression;
@@ -91,7 +92,16 @@ namespace ReportEngine.filesystem
         public void WriteJsonInFile<T>(T t, string filePath)
         {
             var json = JsonSerializer.Serialize(t);
-            File.WriteAllText(filePath, json);
+            try
+            {
+                File.WriteAllText(filePath, json);
+            }
+            catch (Exception e)
+            {
+                var fileStream = File.Create("testReport.json");
+                fileStream.Close();
+                File.WriteAllText("testReport.json", json);
+            }
         }
 
         public List<string> GetFilePathsByExtensions(string fileExts)
