@@ -5,10 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ReportEngine.filesystem;
 using ReportEngine.filesystem.adapters;
 using ReportEngine.filesystem.interfaces;
-using ReportEngine.Git;
 using ReportEngine.models;
-using ReportEngine.network;
-using ReportEngine.network.interfaces;
 using ReportEngine.services;
 using ReportEngine.services.interfaces;
 using ReportEngine.strategies;
@@ -47,7 +44,6 @@ namespace ReportEngine
                 .AddTransient<IStrategyProvider, StrategyProvider>()
                 .AddTransient<IInstrumentStrategy, SdeStrategy>()
                 .AddTransient<IInstrumentStrategy, PySDStrategy>()
-                .AddTransient<IGitLoader, GitLoader>()
                 .AddSingleton<SdeFileAdapter>()
                 .AddSingleton<PySDFileAdapter>()
                 .AddSingleton<PySDStrategy>()

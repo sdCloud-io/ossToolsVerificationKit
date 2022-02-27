@@ -5,7 +5,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using ReportEngine.filesystem.interfaces;
 using ReportEngine.models;
-using ReportEngine.network.interfaces;
 using ReportEngine.services.interfaces;
 using ReportEngine.strategies.interfaces;
 
@@ -15,21 +14,17 @@ namespace ReportEngine.services
     {
         private readonly ILogger<ReportBuilder> _logger;
         private readonly IFileSystemHelper _fileSystemHelper;
-        private readonly IGitLoader _gitLoader;
         private readonly Configuration _configuration;
         private readonly List<IInstrumentStrategy> _providedStrategies;
 
-        public ReportBuilder(ILogger<ReportBuilder> logger, IFileSystemHelper fileSystemHelper, IGitLoader gitLoader,
+        public ReportBuilder(ILogger<ReportBuilder> logger, IFileSystemHelper fileSystemHelper,
             IStrategyProvider strategyProvider, IOptions<Configuration> configuration)
         {
             _logger = logger;
             _fileSystemHelper = fileSystemHelper;
-            _gitLoader = gitLoader;
             _configuration = configuration.Value;
 
             _logger.LogInformation("Setting up build directory");
-            _fileSystemHelper.DeleteDirectory(_configuration.BuildDir);
-            _fileSystemHelper.CreateDirectory(_configuration.BuildDir);
             _fileSystemHelper.ChangeDirectory(_configuration.BuildDir);
 
             _providedStrategies = strategyProvider.GetAllStrategies();
@@ -62,7 +57,7 @@ namespace ReportEngine.services
             foreach (var fileExtension in fileExtensions)
             {
                 foreach (var modelPath in _fileSystemHelper.GetFilePathsByExtensions(
-                    fileExtension.FileExtension))
+                             fileExtension.FileExtension))
                 {
                     var modelResult = new ModelResult
                     {

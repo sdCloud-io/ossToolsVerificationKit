@@ -54,10 +54,6 @@ node('sd_cert_tool') {
       sh "dotnet publish ./ReportEngine/ReportEngine.csproj"
       sh "dotnet run --project ./ReportEngine/ReportEngine.csproj"
    }
-
-   stage('Build') {
-         sh "chmod +x *.sh"
-   }
 }
 node('master') {
     stage('Publication:prepare') { 
