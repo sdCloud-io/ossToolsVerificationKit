@@ -1,4 +1,4 @@
-import data from './testReport.json'
+import data from './build/testReport.json'
 import React from 'react';
 import Panel from 'react-bootstrap/lib/Panel';
 import Alert from 'react-bootstrap/lib/Alert'
@@ -7,11 +7,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function Success(props) {
-    return <div className='fa fa-check'></div>;
+    return <div className='fa fa-check'/>;
 }
 
 function Fail(props) {
-    return <div className='fa fa-times'></div>;
+    return <div className='fa fa-times'/>;
 }
 
 
@@ -81,7 +81,6 @@ class Example extends React.Component {
         const currentState = this.state.open;
         this.setState({ open: !currentState });
     };
-
 
     render() {
         return (

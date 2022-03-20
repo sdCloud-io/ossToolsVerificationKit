@@ -80,7 +80,7 @@ namespace ReportEngine.filesystem
 
         public void CopyFile(string filePathSource, string filePathDestination)
         {
-            File.Copy(filePathSource, filePathDestination);
+            File.Copy(filePathSource, filePathDestination, true);
         }
 
         public void SetPermissionExecute(string filePath)
