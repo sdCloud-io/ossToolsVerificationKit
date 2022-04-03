@@ -1,3 +1,9 @@
+properties([
+    pipelineTriggers([
+        [$class: 'SCMTrigger', scmpoll_spec: 'H/3 * * * *'],
+    ])
+])
+
 node('sd_cert_tool') {
     def mvnHome
 
@@ -13,7 +19,7 @@ node('sd_cert_tool') {
    stage('Fetch branches'){
       dir('build'){
          checkout([$class: 'GitSCM', 
-            branches: [[name: '*//* master']],
+            branches: [[name: '*/master']],
             doGenerateSubmoduleConfigurations: false, 
             extensions: [[$class: 'RelativeTargetDirectory', 
             relativeTargetDir: 'pysd_repo']], 
@@ -21,7 +27,7 @@ node('sd_cert_tool') {
             userRemoteConfigs: [[url: 'https://github.com/JamesPHoughton/pysd.git']]])
 
          checkout([$class: 'GitSCM', 
-            branches: [[name: '*//* develop']],
+            branches: [[name: '*/develop']],
             doGenerateSubmoduleConfigurations: false, 
             extensions: [[$class: 'RelativeTargetDirectory', 
             relativeTargetDir: 'sdeverywhere']], 
@@ -29,12 +35,20 @@ node('sd_cert_tool') {
             userRemoteConfigs: [[url: 'https://github.com/climateinteractive/SDEverywhere.git']]])
 
          checkout([$class: 'GitSCM', 
-            branches: [[name: '*//* master']],
+            branches: [[name: '*/master']],
             doGenerateSubmoduleConfigurations: false, 
             extensions: [[$class: 'RelativeTargetDirectory', 
             relativeTargetDir: 'testModels']], 
             submoduleCfg: [], 
             userRemoteConfigs: [[url: 'https://github.com/SDXorg/test-models.git']]])
+            
+         checkout([$class: 'GitSCM', 
+                     branches: [[name: '*/developer']],
+                     doGenerateSubmoduleConfigurations: false, 
+                     extensions: [[$class: 'RelativeTargetDirectory', 
+                     relativeTargetDir: 'stupidtest']], 
+                     submoduleCfg: [], 
+                     userRemoteConfigs: [[url: 'https://github.com/ifelseelif/test1.git']]])
       }
    }
 
