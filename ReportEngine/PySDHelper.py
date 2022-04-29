@@ -26,13 +26,13 @@ if command == 'compileMdl':
     model = pysd.read_vensim(modelName)
 elif command == 'compileAndRunMdl':
     model = pysd.read_vensim(modelName)
-    result=model.run()
+    result=model.run(flatten_output=True)
     print_full(json.dumps(result.to_dict()), modelName)
 elif command == 'compileXmile':
     model = pysd.read_xmile(modelName)
 elif command == 'compileAndRunXmile':
     model = pysd.read_xmile(modelName)
-    result=model.run()
+    result=model.run(flatten_output=True)
     print_full(json.dumps(result.to_dict()), modelName)
 
 exit()

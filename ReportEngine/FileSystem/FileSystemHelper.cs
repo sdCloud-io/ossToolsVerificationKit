@@ -2,7 +2,6 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO.Compression;
 using System.Linq;
 using System.Text.Json;
 using Microsoft.Extensions.Options;
@@ -26,35 +25,14 @@ namespace ReportEngine.filesystem
             return JsonSerializer.Deserialize<T>(jsonFile.ReadToEnd());
         }
 
-        public void DeleteDirectory(string dirPath)
-        {
-            if (!Directory.Exists(dirPath)) return;
-
-            Directory.Delete(dirPath, true);
-        }
-
-        public void CreateDirectory(string dirPath)
-        {
-            Directory.CreateDirectory(dirPath);
-        }
-
         public void ChangeDirectory(string dirPath)
         {
+            if (!Directory.Exists(dirPath))
+            {
+                Directory.CreateDirectory(dirPath);
+            }
+
             Directory.SetCurrentDirectory(dirPath);
-        }
-
-        public void DeleteFile(string filePath)
-        {
-            File.Delete(filePath);
-        }
-
-        public void ExtractFile(string zipFilePath, string path)
-        {
-            ZipFile.ExtractToDirectory(zipFilePath, "temp");
-            DeleteFile(zipFilePath);
-            var dirPath = Directory.GetDirectories("temp")[0];
-            Directory.Move(dirPath, path);
-            Directory.Delete("temp");
         }
 
         public string GetCurrentDirectory()

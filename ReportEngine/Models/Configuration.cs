@@ -9,5 +9,7 @@ namespace ReportEngine.models
         public List<ScriptConfiguration> Scripts { get; set; }
         public string BuildDir { get; set; }
         public string ReportFilePath { get; set; }
+        public string ComparisonReportFilePath { get; set; }
+        public double ConfidenceInterval { get; set; }
     }
 }

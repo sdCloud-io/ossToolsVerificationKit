@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace ReportEngine.models
 {
@@ -10,6 +11,12 @@ namespace ReportEngine.models
         public long CodeGenerationTime { get; set; }
         public long CodeCompilationTime { get; set; }
         public long CodeExecutionTime { get; set; }
-        public Dictionary<string, List<string>> ResultDictionary { get; set; }
+
+        [JsonIgnore] public Dictionary<string, List<string>> ResultDictionary { get; set; }
+
+        public bool IsSuccess()
+        {
+            return Result == Constants.Success;
+        }
     }
 }

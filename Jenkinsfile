@@ -41,14 +41,6 @@ node('sd_cert_tool') {
             relativeTargetDir: 'testModels']], 
             submoduleCfg: [], 
             userRemoteConfigs: [[url: 'https://github.com/SDXorg/test-models.git']]])
-            
-         checkout([$class: 'GitSCM', 
-                     branches: [[name: '*/developer']],
-                     doGenerateSubmoduleConfigurations: false, 
-                     extensions: [[$class: 'RelativeTargetDirectory', 
-                     relativeTargetDir: 'stupidtest']], 
-                     submoduleCfg: [], 
-                     userRemoteConfigs: [[url: 'https://github.com/ifelseelif/test1.git']]])
       }
    }
 

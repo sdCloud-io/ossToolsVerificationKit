@@ -24,8 +24,9 @@ namespace ReportEngine
             ConfigureServices(services);
             var serviceProvider = services.BuildServiceProvider();
             var reportService = serviceProvider.GetService<IReportService>();
-            reportService?.GenerateReport();
-            Console.WriteLine("Ok");
+            var report = reportService?.GenerateReport();
+            reportService?.GenerateComparisonReport(report);
+
         }
 
         private static void ConfigureServices(IServiceCollection services)

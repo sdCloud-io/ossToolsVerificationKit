@@ -11,5 +11,6 @@ namespace ReportEngine.filesystem.interfaces
         void SetPermissionExecute(string filePath);
         void WriteJsonInFile<T>(T t, string filePath);
         List<string> GetFilePathsByExtensions(string ext);
+        T ReadFromJsonFile<T>(string filePath);
     }
 }
