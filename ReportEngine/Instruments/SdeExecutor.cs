@@ -5,21 +5,20 @@ using Microsoft.Extensions.Options;
 using ReportEngine.filesystem.adapters;
 using ReportEngine.filesystem.interfaces;
 using ReportEngine.models;
-using ReportEngine.services;
 using ReportEngine.strategies.interfaces;
 
-namespace ReportEngine.strategies
+namespace ReportEngine.Instruments
 {
-    public class SdeStrategy : IInstrumentStrategy
+    public class SdeExecutor : IInstrumentExecutor
     {
-        private const string NAME = "SDE";
-        private readonly ILogger<SdeStrategy> _logger;
+        private const string Name = "SDE";
+        private readonly ILogger<SdeExecutor> _logger;
         private readonly IFileSystemHelper _fileSystemHelper;
         private readonly SdeFileAdapter _sdeFileAdapter;
         private readonly Configuration _configuration;
-        private string sdeCmd;
+        private string _sdeCmd;
 
-        public SdeStrategy(ILogger<SdeStrategy> logger, IFileSystemHelper fileSystemHelper,
+        public SdeExecutor(ILogger<SdeExecutor> logger, IFileSystemHelper fileSystemHelper,
             SdeFileAdapter sdeFileAdapter, IOptions<Configuration> configuration)
         {
             _logger = logger;
@@ -48,8 +47,8 @@ namespace ReportEngine.strategies
             sdeInitProcess.WaitForExit();
 
             _logger.LogInformation($"Finished building {GetName()} with npm:");
-            sdeCmd =
-                $"./{_configuration.Instruments.FirstOrDefault(elem => elem.Name == NAME)?.Path}/src/sde.js";
+            _sdeCmd =
+                $"./{_configuration.Instruments.FirstOrDefault(elem => elem.Name == Name)?.Path}/src/sde.js";
             _fileSystemHelper.ChangeDirectory(currentDir);
         }
 
@@ -99,7 +98,7 @@ namespace ReportEngine.strategies
             timer.Start();
             var startTime = timer.ElapsedMilliseconds;
             var executionCommand = command;
-            var executionArguments = $"{sdeCmd} {executionCommand} {modelPath}";
+            var executionArguments = $"{_sdeCmd} {executionCommand} {modelPath}";
             var executionProcessResult = ProcessHelper.ExecuteProcess("node", executionArguments);
             executionTime = timer.ElapsedMilliseconds - startTime;
             resultInfo.Log = executionProcessResult.Error;
@@ -109,7 +108,7 @@ namespace ReportEngine.strategies
 
         public string GetName()
         {
-            return NAME;
+            return Name;
         }
     }
 }

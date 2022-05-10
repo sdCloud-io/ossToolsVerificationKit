@@ -81,7 +81,7 @@ namespace ReportEngine.filesystem
             }
         }
 
-        public List<string> GetFilePathsByExtensions(string fileExts)
+        public List<string> GetModelPathsByExtension(string fileExts)
         {
             var result = new List<string>();
             foreach (var path in _configuration.Models.Select(model => model.Path))

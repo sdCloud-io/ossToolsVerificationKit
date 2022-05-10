@@ -5,17 +5,17 @@ using ReportEngine.filesystem.interfaces;
 using ReportEngine.models;
 using ReportEngine.strategies.interfaces;
 
-namespace ReportEngine.strategies
+namespace ReportEngine.Instruments
 {
-    public class PySDStrategy : IInstrumentStrategy
+    public class PySdExecutor : IInstrumentExecutor
     {
-        private const string NAME = "PySD";
-        private readonly ILogger<PySDStrategy> _logger;
+        private const string Name = "PySD";
+        private readonly ILogger<PySdExecutor> _logger;
         private readonly IFileSystemHelper _fileSystemHelper;
         private readonly PySDFileAdapter _pySdFileAdapter;
         private string _pySdCmd;
 
-        public PySDStrategy(ILogger<PySDStrategy> logger, IFileSystemHelper fileSystemHelper,
+        public PySdExecutor(ILogger<PySdExecutor> logger, IFileSystemHelper fileSystemHelper,
             PySDFileAdapter pySdFileAdapter)
         {
             _logger = logger;
@@ -81,7 +81,7 @@ namespace ReportEngine.strategies
 
         public string GetName()
         {
-            return NAME;
+            return Name;
         }
     }
 }

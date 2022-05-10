@@ -1,10 +1,10 @@
 ﻿using ReportEngine.models;
 
-namespace ReportEngine.services.interfaces
+namespace ReportEngine.Services
 {
-    public interface IReportService
+    public interface IReportBuilder
     {
-        Report GenerateReport();
+        Report GenerateExecutionReport();
         ComparisonReport GenerateComparisonReport(Report report);
     }
 }

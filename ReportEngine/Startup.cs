@@ -5,9 +5,11 @@ using Microsoft.Extensions.DependencyInjection;
 using ReportEngine.filesystem;
 using ReportEngine.filesystem.adapters;
 using ReportEngine.filesystem.interfaces;
+using ReportEngine.Instruments;
+using ReportEngine.Instruments.Interfaces;
 using ReportEngine.models;
-using ReportEngine.services;
-using ReportEngine.services.interfaces;
+using ReportEngine.Services;
+using ReportEngine.Services.Implementation;
 using ReportEngine.strategies;
 using ReportEngine.strategies.interfaces;
 using Serilog;
@@ -23,8 +25,8 @@ namespace ReportEngine
             var services = new ServiceCollection();
             ConfigureServices(services);
             var serviceProvider = services.BuildServiceProvider();
-            var reportService = serviceProvider.GetService<IReportService>();
-            var report = reportService?.GenerateReport();
+            var reportService = serviceProvider.GetService<IReportBuilder>();
+            var report = reportService?.GenerateExecutionReport();
             reportService?.GenerateComparisonReport(report);
 
         }
@@ -40,14 +42,16 @@ namespace ReportEngine
             services.AddLogging(opt => opt.AddSerilog(
                     new LoggerConfiguration().WriteTo.Console().CreateLogger()
                 ))
-                .AddTransient<IReportService, ReportBuilder>()
+                .AddTransient<IReportBuilder, ReportBuilder>()
+                .AddTransient<IScriptComparator, ScriptComparator>()
+                .AddTransient<IScriptExecution, ScriptExecution>()
                 .AddTransient<IFileSystemHelper, FileSystemHelper>()
-                .AddTransient<IStrategyProvider, StrategyProvider>()
-                .AddTransient<IInstrumentStrategy, SdeStrategy>()
-                .AddTransient<IInstrumentStrategy, PySDStrategy>()
+                .AddTransient<IInstrumentProvider, InstrumentsProvider>()
+                .AddTransient<IInstrumentExecutor, SdeExecutor>()
+                .AddTransient<IInstrumentExecutor, PySdExecutor>()
                 .AddSingleton<SdeFileAdapter>()
                 .AddSingleton<PySDFileAdapter>()
-                .AddSingleton<PySDStrategy>()
+                .AddSingleton<PySdExecutor>()
                 .AddSingleton(configuration)
                 .Configure<Configuration>(configuration);
         }

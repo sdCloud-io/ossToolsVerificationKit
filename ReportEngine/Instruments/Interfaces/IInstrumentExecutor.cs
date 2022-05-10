@@ -2,7 +2,7 @@
 
 namespace ReportEngine.strategies.interfaces
 {
-    public interface IInstrumentStrategy
+    public interface IInstrumentExecutor
     {
         void Init(string path);
         ModelInstrumentResult ValidateModel(string path);

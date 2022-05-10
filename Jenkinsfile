@@ -18,7 +18,7 @@ node('sd_cert_tool') {
 
    stage('Fetch branches'){
       dir('build'){
-         checkout([$class: 'GitSCM', 
+        checkout([$class: 'GitSCM', 
             branches: [[name: '*/master']],
             doGenerateSubmoduleConfigurations: false, 
             extensions: [[$class: 'RelativeTargetDirectory', 
@@ -26,7 +26,7 @@ node('sd_cert_tool') {
             submoduleCfg: [], 
             userRemoteConfigs: [[url: 'https://github.com/JamesPHoughton/pysd.git']]])
 
-         checkout([$class: 'GitSCM', 
+        checkout([$class: 'GitSCM', 
             branches: [[name: '*/develop']],
             doGenerateSubmoduleConfigurations: false, 
             extensions: [[$class: 'RelativeTargetDirectory', 
@@ -34,7 +34,7 @@ node('sd_cert_tool') {
             submoduleCfg: [], 
             userRemoteConfigs: [[url: 'https://github.com/climateinteractive/SDEverywhere.git']]])
 
-         checkout([$class: 'GitSCM', 
+        checkout([$class: 'GitSCM', 
             branches: [[name: '*/master']],
             doGenerateSubmoduleConfigurations: false, 
             extensions: [[$class: 'RelativeTargetDirectory', 
@@ -48,10 +48,6 @@ node('sd_cert_tool') {
       sh 'dotnet restore ./ReportEngine/ReportEngine.sln'
    }
 
-   stage('Clean') {
-      sh 'dotnet clean ./ReportEngine/ReportEngine.csproj'
-   }
-
    stage('Build'){
       sh "dotnet build ./ReportEngine/ReportEngine.csproj --configuration Release"
    }
@@ -62,10 +58,10 @@ node('sd_cert_tool') {
     }
 
     stage('Results') {
-        archive 'build/*.json'
         stash name: "certification-report-stash", includes: 'build/*.json'
     }
 }
+
 node('master') {
     stage('Publication:prepare') { 
         checkout scm: [
@@ -78,7 +74,6 @@ node('master') {
 
      stage('Publication:move report') {
         dir("src/src") {
-            sh "rm -f testReport.json"
             unstash "certification-report-stash"
         }
     }

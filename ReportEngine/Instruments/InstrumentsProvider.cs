@@ -1,23 +1,24 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Extensions.Options;
+using ReportEngine.Instruments.Interfaces;
 using ReportEngine.models;
 using ReportEngine.strategies.interfaces;
 
-namespace ReportEngine.strategies
+namespace ReportEngine.Instruments
 {
-    public class StrategyProvider : IStrategyProvider
+    public class InstrumentsProvider : IInstrumentProvider
     {
-        private readonly IEnumerable<IInstrumentStrategy> _strategies;
+        private readonly IEnumerable<IInstrumentExecutor> _strategies;
         private readonly Configuration _configuration;
 
-        public StrategyProvider(IEnumerable<IInstrumentStrategy> strategies, IOptions<Configuration> configuration)
+        public InstrumentsProvider(IEnumerable<IInstrumentExecutor> strategies, IOptions<Configuration> configuration)
         {
             _strategies = strategies;
             _configuration = configuration.Value;
         }
 
-        public List<IInstrumentStrategy> GetAllStrategies()
+        public List<IInstrumentExecutor> GetAllStrategies()
         {
             var strategyNames =
                 _configuration.Instruments.Select(instrument => instrument.Name);
