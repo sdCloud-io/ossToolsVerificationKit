@@ -19,7 +19,9 @@ export function LogPanel(props) {
                 <Alert bsStyle="info">
                     <div className="row">
                         <div className="col-md-12 col-lg-12 col-xs-12">
-                            { props.log }
+                            <pre className="logs">
+                                    { props.log }
+                            </pre>
                         </div>
                     </div>
                     <p>

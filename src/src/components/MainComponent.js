@@ -22,7 +22,10 @@ export function MainComponent(props) {
 
     function getLogFromItem(resultItem) {
         return resultItem.ModelInstrumentResults.map(instumentResult =>
-            <LogPanel log={ instumentResult.Log }/>)
+            instumentResult.Log.length > 0 ?
+                <LogPanel log={ instumentResult.Log }/> :
+                <div>no logs</div>)
+
     }
 
     function getGenerationTimeFromItem(resultItem) {
