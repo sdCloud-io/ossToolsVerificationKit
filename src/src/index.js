@@ -1,9 +1,11 @@
-import reportExecutionData from './build/report.json'
-import reportComparisonData from './build/comparisonReport.json'
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import './index.css';
-import { MainComponent } from "./components/MainComponent";
+import { files } from './reports/linker'
+import { AppComponent } from "./AppComponent";
 
-ReactDOM.render(<MainComponent reportExecutionsCollection={ reportExecutionData }
-                               reportComparisonCollection={ reportComparisonData }/>, document.getElementById('root'));
+ReactDOM.render(<AppComponent
+    reports={ files }/>, document.getElementById('root'));

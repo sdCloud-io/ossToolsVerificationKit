@@ -2,37 +2,26 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Text.Json;
 using Microsoft.Extensions.Options;
-using ReportEngine.filesystem.interfaces;
-using ReportEngine.models;
+using ReportEngine.FileSystem;
 
 namespace ReportEngine.filesystem
 {
     public class FileSystemHelper : IFileSystemHelper
     {
-        private readonly Configuration _configuration;
+        private readonly Configuration.Configuration _configuration;
 
-        public FileSystemHelper(IOptions<Configuration> configuration)
+        public FileSystemHelper(IOptions<Configuration.Configuration> configuration)
         {
             _configuration = configuration.Value;
+            Directory.SetCurrentDirectory(_configuration.BuildDir);
         }
 
         public T ReadFromJsonFile<T>(string filePath)
         {
             using var jsonFile = new StreamReader(filePath);
             return JsonSerializer.Deserialize<T>(jsonFile.ReadToEnd());
-        }
-
-        public void ChangeDirectory(string dirPath)
-        {
-            if (!Directory.Exists(dirPath))
-            {
-                Directory.CreateDirectory(dirPath);
-            }
-
-            Directory.SetCurrentDirectory(dirPath);
         }
 
         public string GetCurrentDirectory()
@@ -65,31 +54,16 @@ namespace ReportEngine.filesystem
         {
             Process.Start("chmod", $"+x {filePath}");
         }
-
-        public void WriteJsonInFile<T>(T t, string filePath)
-        {
-            var json = JsonSerializer.Serialize(t);
-            try
-            {
-                File.WriteAllText(filePath, json);
-            }
-            catch (Exception e)
-            {
-                var fileStream = File.Create("testReport.json");
-                fileStream.Close();
-                File.WriteAllText("testReport.json", json);
-            }
-        }
-
+        
         public List<string> GetModelPathsByExtension(string fileExts)
         {
-            var result = new List<string>();
-            foreach (var path in _configuration.Models.Select(model => model.Path))
+            var modelPaths = new List<string>();
+            foreach (var path in _configuration.Models)
             {
-                result.AddRange(Directory.GetFiles(path, fileExts, SearchOption.AllDirectories));
+                modelPaths.AddRange(Directory.GetFiles(path, fileExts, SearchOption.AllDirectories));
             }
 
-            return result;
+            return modelPaths;
         }
     }
 }

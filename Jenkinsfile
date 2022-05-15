@@ -5,61 +5,63 @@ properties([
 ])
 
 node('sd_cert_tool') {
-    def mvnHome
+   def mvnHome
+  
+    stage('Preparation') {       
+        checkout scm: [
+            $class: 'GitSCM', 
+            branches: [[name: 'origin/origin/1-changed-language-of-repository']], 
+            userRemoteConfigs: [[url: 'https://github.com/sdCloud-io/ossToolsVerificationKit.git']]
+        ], 
+        poll: true
+    }
 
-   stage('Preparation') { 
-      checkout scm: [
-          $class: 'GitSCM', 
-          branches: [[name: 'origin/origin/1-changed-language-of-repository']], 
-          userRemoteConfigs: [[url: 'https://github.com/sdCloud-io/ossToolsVerificationKit.git']]
-       ], 
-       poll: true
-   }
+    stage('Fetch branches'){
+        dir('build'){
+            /* checkout([$class: 'GitSCM', 
+                branches: [[name: '*//* master']],
+                doGenerateSubmoduleConfigurations: false, 
+                extensions: [[$class: 'RelativeTargetDirectory', 
+                relativeTargetDir: 'pysd_repo']], 
+                submoduleCfg: [], 
+                userRemoteConfigs: [[url: 'https://github.com/JamesPHoughton/pysd.git']]]) */
+            sh "rm -rf pysd_repo"
+            sh "git clone -b v2.2.2 https://github.com/JamesPHoughton/pysd.git pysd_repo"
 
-   stage('Fetch branches'){
-      dir('build'){
-        checkout([$class: 'GitSCM', 
-            branches: [[name: '*/master']],
-            doGenerateSubmoduleConfigurations: false, 
-            extensions: [[$class: 'RelativeTargetDirectory', 
-            relativeTargetDir: 'pysd_repo']], 
-            submoduleCfg: [], 
-            userRemoteConfigs: [[url: 'https://github.com/JamesPHoughton/pysd.git']]])
+            /* checkout([$class: 'GitSCM', 
+                branches: [[name: '*//* develop']],
+                doGenerateSubmoduleConfigurations: false, 
+                extensions: [[$class: 'RelativeTargetDirectory', 
+                relativeTargetDir: 'sdeverywhere']], 
+                submoduleCfg: [], 
+                userRemoteConfigs: [[url: 'https://github.com/climateinteractive/SDEverywhere.git']]]) */
+            sh "rm -rf sdeverywhere"
+            sh "git clone -b 0.4.1 https://github.com/climateinteractive/SDEverywhere.git sdeverywhere"
 
-        checkout([$class: 'GitSCM', 
-            branches: [[name: '*/develop']],
-            doGenerateSubmoduleConfigurations: false, 
-            extensions: [[$class: 'RelativeTargetDirectory', 
-            relativeTargetDir: 'sdeverywhere']], 
-            submoduleCfg: [], 
-            userRemoteConfigs: [[url: 'https://github.com/climateinteractive/SDEverywhere.git']]])
+            checkout([$class: 'GitSCM', 
+                branches: [[name: '*/master']],
+                doGenerateSubmoduleConfigurations: false, 
+                extensions: [[$class: 'RelativeTargetDirectory', 
+                relativeTargetDir: 'testModels']], 
+                submoduleCfg: [], 
+                userRemoteConfigs: [[url: 'https://github.com/SDXorg/test-models.git']]])
+        }
+    }
 
-        checkout([$class: 'GitSCM', 
-            branches: [[name: '*/master']],
-            doGenerateSubmoduleConfigurations: false, 
-            extensions: [[$class: 'RelativeTargetDirectory', 
-            relativeTargetDir: 'testModels']], 
-            submoduleCfg: [], 
-            userRemoteConfigs: [[url: 'https://github.com/SDXorg/test-models.git']]])
-      }
-   }
+    stage('Restore packages') {
+        sh 'dotnet restore ./ReportEngine/ReportEngine.sln'
+    }
 
-   stage('Restore packages') {
-      sh 'dotnet restore ./ReportEngine/ReportEngine.sln'
-   }
-
-   stage('Build'){
-      sh "dotnet build ./ReportEngine/ReportEngine.csproj --configuration Release"
-   }
+    stage('Build'){
+        sh "dotnet build ./ReportEngine/ReportEngine.csproj --configuration Release"
+    }
 
     stage('Publish'){
-        sh "dotnet publish ./ReportEngine/ReportEngine.csproj"
-        sh "dotnet run --project ./ReportEngine/ReportEngine.csproj"
-    }
-
-    stage('Results') {
-        stash name: "certification-report-stash", includes: 'build/*.json'
-    }
+        withCredentials([string(credentialsId: 'oss_certification_access_token_github', variable: 'TOKEN')]) {
+            sh "dotnet publish ./ReportEngine/ReportEngine.csproj"
+            sh "dotnet run --project ./ReportEngine/ReportEngine.csproj"
+        }
+    } 
 }
 
 node('master') {
@@ -73,8 +75,17 @@ node('master') {
     }
 
      stage('Publication:move report') {
-        dir("src/src") {
-            unstash "certification-report-stash"
+        dir("src/src/reports") {
+            checkout(scm: [
+                $class: 'GitSCM',
+                branches: [[name: '*/master']],
+                userRemoteConfigs: [[url: 'https://github.com/ifelseelif/ossToolsVerificationReports.git']]
+                ], 
+                poll: false,
+                changelog : false
+            )
+                
+            sh "python linker.py"
         }
     }
 
@@ -94,3 +105,4 @@ node('master') {
         }
     }
 }
+

@@ -3,22 +3,20 @@ using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ReportEngine.filesystem;
-using ReportEngine.filesystem.adapters;
-using ReportEngine.filesystem.interfaces;
-using ReportEngine.Instruments;
-using ReportEngine.Instruments.Interfaces;
-using ReportEngine.models;
+using ReportEngine.FileSystem;
+using ReportEngine.GitHelper;
+using ReportEngine.InstrumentHelper;
+using ReportEngine.Instruments.Pysd;
+using ReportEngine.Instruments.Sde;
 using ReportEngine.Services;
 using ReportEngine.Services.Implementation;
-using ReportEngine.strategies;
-using ReportEngine.strategies.interfaces;
 using Serilog;
 
 namespace ReportEngine
 {
     class Startup
     {
-        public static IConfiguration configuration;
+        private static IConfiguration _configuration;
 
         static void Main(string[] args)
         {
@@ -26,14 +24,12 @@ namespace ReportEngine
             ConfigureServices(services);
             var serviceProvider = services.BuildServiceProvider();
             var reportService = serviceProvider.GetService<IReportBuilder>();
-            var report = reportService?.GenerateExecutionReport();
-            reportService?.GenerateComparisonReport(report);
-
+            reportService?.GenerateExecutionReport();
         }
 
         private static void ConfigureServices(IServiceCollection services)
         {
-            configuration = new ConfigurationBuilder()
+            _configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetParent(AppContext.BaseDirectory)?.FullName)
                 .AddJsonFile("appsettings.json", false)
                 .Build();
@@ -42,18 +38,16 @@ namespace ReportEngine
             services.AddLogging(opt => opt.AddSerilog(
                     new LoggerConfiguration().WriteTo.Console().CreateLogger()
                 ))
+                .AddSingleton<IGitHelper, GitHelper.GitHelper>()
                 .AddTransient<IReportBuilder, ReportBuilder>()
-                .AddTransient<IScriptComparator, ScriptComparator>()
-                .AddTransient<IScriptExecution, ScriptExecution>()
-                .AddTransient<IFileSystemHelper, FileSystemHelper>()
+                .AddSingleton<IFileSystemHelper, FileSystemHelper>()
                 .AddTransient<IInstrumentProvider, InstrumentsProvider>()
-                .AddTransient<IInstrumentExecutor, SdeExecutor>()
-                .AddTransient<IInstrumentExecutor, PySdExecutor>()
-                .AddSingleton<SdeFileAdapter>()
-                .AddSingleton<PySDFileAdapter>()
-                .AddSingleton<PySdExecutor>()
-                .AddSingleton(configuration)
-                .Configure<Configuration>(configuration);
+                .AddSingleton<Instruments.IInstrumentExecutor, SdeExecutor>()
+                .AddSingleton<Instruments.IInstrumentExecutor, PySdExecutor>()
+                .AddTransient<SdeFileValueReader>()
+                .AddTransient<PySdFileValueReader>()
+                .AddSingleton(_configuration)
+                .Configure<Configuration.Configuration>(_configuration);
         }
     }
 }

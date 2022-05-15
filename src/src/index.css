@@ -2,10 +2,37 @@
     white-space: normal;
 }
 
-.mt-5{
+.mt-5 {
     margin-top: 15px;
 }
 
 .logs {
-    text-align: left;
+    text-align: left!important;
+}
+
+pre{
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    white-space: pre;
+}
+
+.panel {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+    border: 1px solid rgba(0,0,0,.125)!important;
+}
+
+.accordion-button::after {
+    margin-left: revert;
 }
