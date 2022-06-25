@@ -7,10 +7,10 @@
 }
 
 .logs {
-    text-align: left!important;
+    text-align: left !important;
 }
 
-pre{
+pre {
     display: block;
     padding: 9.5px;
     margin: 0 0 10px;
@@ -30,9 +30,37 @@ pre{
     background-color: #fff;
     border-radius: 4px;
     -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
-    border: 1px solid rgba(0,0,0,.125)!important;
+    border: 1px solid rgba(0, 0, 0, .125) !important;
+}
+
+.picker {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 4px;
 }
 
 .accordion-button::after {
     margin-left: revert;
+}
+
+.hide-accordion::after {
+    visibility: hidden;
+}
+
+.instrument-card:hover {
+    border: 1px solid blue;
+}
+
+.instrument-card:active {
+    border: 1px solid blue;
+}
+
+.border-card {
+    border: 1px solid #ccc;
+    border-radius: 16px;
+}
+
+.modal-90w {
+    width: 90%;
+    max-width: none!important;
 }

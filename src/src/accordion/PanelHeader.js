@@ -1,18 +1,19 @@
-import { Accordion, Col, Container, Row } from "react-bootstrap";
+import { Accordion, Badge, Col, Container, Row } from "react-bootstrap";
 import React from "react";
 import { ResultBadge } from "./ResultBadge";
 
 export function PanelHeader(props) {
+
     return (
         <Accordion.Header>
             <Container fluid>
                 <Row>
-                    <Col className="text-center">{ props.value[0].ModelPath.replace(/^.*[\\\/]/, '') }</Col>
+                    <Col className="text-center">{ props.modelName.replace(/^.*[\\\/]/, '') }</Col>
                     {
-                        props.instrumentsNames.map( (instrumentResult, i) =>
+                        props.instrumentsInformation.map((instrumentResult, i) =>
                             <Col className="text-center">
-                                { instrumentResult }
-                                <ResultBadge result={ props.value[i].Result }/>
+                                {/*{ instrumentResult.InstrumentName }  <Badge bg="secondary"> { instrumentResult.InstrumentVersion } </Badge>*/}
+                                <ResultBadge result={ props.instrumentsResults[i].Result }/>
                             </Col>
                         )
                     }

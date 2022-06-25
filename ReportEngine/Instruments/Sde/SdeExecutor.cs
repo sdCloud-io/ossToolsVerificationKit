@@ -74,8 +74,7 @@ namespace ReportEngine.Instruments.Sde
             var timer = new Stopwatch();
             timer.Start();
             var startTime = timer.ElapsedMilliseconds;
-            var executionCommand = command;
-            var executionArguments = $"{_sdeCmd} {executionCommand} {modelPath}";
+            var executionArguments = $"{_sdeCmd} {command} \"{modelPath}\"";
             var executionProcessResult = ProcessHelper.ExecuteProcess("node", executionArguments);
             executionTime = timer.ElapsedMilliseconds - startTime;
             resultInfo.Log = executionProcessResult.Error;

@@ -18,25 +18,25 @@ node('sd_cert_tool') {
 
     stage('Fetch branches'){
         dir('build'){
-            /* checkout([$class: 'GitSCM', 
+            checkout([$class: 'GitSCM', 
                 branches: [[name: '*//* master']],
                 doGenerateSubmoduleConfigurations: false, 
                 extensions: [[$class: 'RelativeTargetDirectory', 
                 relativeTargetDir: 'pysd_repo']], 
                 submoduleCfg: [], 
-                userRemoteConfigs: [[url: 'https://github.com/JamesPHoughton/pysd.git']]]) */
-            sh "rm -rf pysd_repo"
-            sh "git clone -b v2.2.2 https://github.com/JamesPHoughton/pysd.git pysd_repo"
+                userRemoteConfigs: [[url: 'https://github.com/JamesPHoughton/pysd.git']]])
+            /* sh "rm -rf pysd_repo"
+            sh "git clone -b v2.2.2 https://github.com/JamesPHoughton/pysd.git pysd_repo" */
 
-            /* checkout([$class: 'GitSCM', 
+             checkout([$class: 'GitSCM', 
                 branches: [[name: '*//* develop']],
                 doGenerateSubmoduleConfigurations: false, 
                 extensions: [[$class: 'RelativeTargetDirectory', 
                 relativeTargetDir: 'sdeverywhere']], 
                 submoduleCfg: [], 
-                userRemoteConfigs: [[url: 'https://github.com/climateinteractive/SDEverywhere.git']]]) */
-            sh "rm -rf sdeverywhere"
-            sh "git clone -b 0.4.1 https://github.com/climateinteractive/SDEverywhere.git sdeverywhere"
+                userRemoteConfigs: [[url: 'https://github.com/climateinteractive/SDEverywhere.git']]]) 
+            /* sh "rm -rf sdeverywhere"
+            sh "git clone -b 0.4.1 https://github.com/climateinteractive/SDEverywhere.git sdeverywhere" */
 
             checkout([$class: 'GitSCM', 
                 branches: [[name: '*/master']],

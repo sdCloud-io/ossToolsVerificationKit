@@ -79,7 +79,7 @@ namespace ReportEngine.Instruments.Pysd
             var startTime = timer.ElapsedMilliseconds;
             var modelType = modelPath.Contains(".xmile") ? "Xmile" : "Mdl";
             var executionCommand = command + modelType;
-            var executionArguments = $"{_pySdCmd} {executionCommand} {modelPath}";
+            var executionArguments = $"{_pySdCmd} {executionCommand} \"{modelPath}\"";
             var executionProcessResult = ProcessHelper.ExecuteProcess("python3", executionArguments);
             executionTime = timer.ElapsedMilliseconds - startTime;
             resultInfo.Log = executionProcessResult.Error;

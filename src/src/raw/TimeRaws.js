@@ -23,17 +23,17 @@ export function TimeRaws(props) {
         <Container fluid className="text-center">
             <Row>
                 <Col>Generation Time</Col>
-                { getGenerationTimeFromItem().map(value => <Col>{ value } </Col>) }
+                { getGenerationTimeFromItem().map(value => <Col>{ value } ms </Col>) }
             </Row>
 
             <Row>
                 <Col>Execution Time</Col>
-                { getExecutionTimeFromItem().map(value => <Col>{ value } </Col>) }
+                { getExecutionTimeFromItem().map(value => <Col>{ value } ms </Col>) }
             </Row>
 
             <Row>
                 <Col>Compilation Time</Col>
-                { getCompilationTimeFromItem().map(value => <Col>{ value } </Col>) }
+                { getCompilationTimeFromItem().map(value => <Col>{ value } ms </Col>) }
             </Row>
         </Container>
     )
